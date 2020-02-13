@@ -330,7 +330,7 @@
         <translation>Reindexiere Blöcke auf dem Datenträger...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Adultchain address</source>
         <translation>Coins an eine Bitcoin-Adresse senden</translation>
     </message>
     <message>
@@ -648,7 +648,7 @@
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Adultchain address (e.g. %1)</source>
         <translation>Bitcoin Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>

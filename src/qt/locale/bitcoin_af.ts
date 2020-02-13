@@ -342,7 +342,7 @@
         <translation>Herindekseer blokke op skyf...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Adultchain address</source>
         <translation>Stuur muntstukke na 'n Bitcoin adres</translation>
     </message>
     <message>
@@ -418,8 +418,8 @@
         <translation>Blad nutsbalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Versoek betalings (genereer QR kodes en bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and adultchain: URIs)</source>
+        <translation>Versoek betalings (genereer QR kodes en adultchain: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -430,8 +430,8 @@
         <translation>Wys die lys van gebruikte ontvangsadresse en etikette</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Open 'n bitcoin: URI of betalingsversoek</translation>
+        <source>Open a adultchain: URI or payment request</source>
+        <translation>Open 'n adultchain: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -734,7 +734,7 @@
         <translation>Wysig stuurende adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Adultchain address.</source>
         <translation>Die ingeskrewe adres "%1" is nie 'n geldige Bitcoin adres nie.</translation>
     </message>
     <message>
@@ -1160,7 +1160,7 @@
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Adultchain address (e.g. %1)</source>
         <translation>Voer in 'n Bitcoin adres (bv. %1)</translation>
     </message>
     <message>
@@ -1741,7 +1741,7 @@ transaksievertragingsrisiko.</translation>
         <translation>Betalings versoek verstryk.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Adultchain address</source>
         <translation>Waarskuwing: Ongeldige Bitcoinadres</translation>
     </message>
     <message>
@@ -1778,7 +1778,7 @@ Is u seker?</translation>
         <translation>Hierdie is 'n gewone betaling</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Adultchain address to send the payment to</source>
         <translation>Die Bitcoinadres waarheen die betaling gestuur word</translation>
     </message>
     <message>

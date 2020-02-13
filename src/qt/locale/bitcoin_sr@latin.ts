@@ -338,7 +338,7 @@
         <translation>Ponovo obeležavam blokove na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Adultchain address</source>
         <translation>Pošalji novčiće na Bitcoin adresu</translation>
     </message>
     <message>
@@ -414,8 +414,8 @@
         <translation>Alatke za tabove</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Zatražite plaćanje (generiše QR kodove i bitcoin: URI-e)</translation>
+        <source>Request payments (generates QR codes and adultchain: URIs)</source>
+        <translation>Zatražite plaćanje (generiše QR kodove i adultchain: URI-e)</translation>
     </message>
     <message>
         <source>Error</source>

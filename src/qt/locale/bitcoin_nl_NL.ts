@@ -338,7 +338,7 @@
         <translation>Blokken op schijf herindexeren...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Adultchain address</source>
         <translation>Verstuur coins naar een Bitcoin adres</translation>
     </message>
     <message>
@@ -414,8 +414,8 @@
         <translation>Tabs taakbalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Betalingen aanvragen (genereert QR codes en bitcoin: URI's)</translation>
+        <source>Request payments (generates QR codes and adultchain: URIs)</source>
+        <translation>Betalingen aanvragen (genereert QR codes en adultchain: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>Toon de lijst van gebruikte ontvangst adressen en labels</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Open een bitcoin: URI of betaalverzoek</translation>
+        <source>Open a adultchain: URI or payment request</source>
+        <translation>Open een adultchain: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

@@ -230,7 +230,7 @@
         <translation>הקש לחבר בחזרה פעילות רשת</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Adultchain address</source>
         <translation>שלח מטבעות לכתובת ביטקוין</translation>
     </message>
     <message>
@@ -553,7 +553,7 @@
         <translation>ערוך כתובת שליחה</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Adultchain address.</source>
         <translation>הכתובת שהוזנה "%1" אינה כתובת ביטקוין חוקית</translation>
     </message>
     <message>

@@ -322,7 +322,7 @@
         <translation>正在為磁碟區塊重建索引...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Adultchain address</source>
         <translation>付款至一個 Bitcoin 位址</translation>
     </message>
     <message>
@@ -382,8 +382,8 @@
         <translation>說明 &amp;H</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>要求付款 (產生QR碼 bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and adultchain: URIs)</source>
+        <translation>要求付款 (產生QR碼 adultchain: URIs)</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -468,7 +468,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Adultchain address (e.g. %1)</source>
         <translation>輸入一個 Bitcoin 位址 (例如 %1)</translation>
     </message>
     <message>
