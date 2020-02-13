@@ -1142,14 +1142,41 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus
 
 CAmount GetBlockSubsidy(int nPrevHeight, const Consensus::Params& consensusParams, bool fSuperblockPartOnly)
 {
-    CAmount nSubsidy = 1000 * COIN;
-
-    return nSubsidy;
+    switch (nPrevHeight)
+    {
+        case 0:                    return 800000000 * COIN;
+	case 1       ...    35000: return 1 * COIN;
+	case 35001   ...    78200: return 100 * COIN;
+	case 78201   ...   121400: return 90 * COIN;
+	case 121401  ...   164600: return 85 * COIN;
+	case 164601  ...   207800: return 80 * COIN;
+	case 207801  ...   251000: return 75 * COIN;
+	case 251001  ...   776600: return 70 * COIN;
+	case 776601  ...  1302200: return 65 * COIN;
+	case 1302201 ...  1827800: return 60 * COIN;
+	case 1827801 ... 26827800: return 50 * COIN;
+        default:                   return 0 * COIN;
+    }
+    return 0; //! needed or compiler will whinge
 }
 
 CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
-    return blockValue * 0.0;
+    switch (nHeight)
+    {
+        case 1       ...    35000: return blockValue * 0.69;
+        case 35001   ...    78200: return blockValue * 0.69;
+        case 78201   ...   121400: return blockValue * 0.621;
+        case 121401  ...   164600: return blockValue * 0.5865;
+        case 164601  ...   207800: return blockValue * 0.552;
+        case 207801  ...   251000: return blockValue * 0.5175;
+        case 251001  ...   776600: return blockValue * 0.483;
+        case 776601  ...  1302200: return blockValue * 0.4485;
+        case 1302201 ...  1827800: return blockValue * 0.414;
+        case 1827801 ... 26827800: return blockValue * 0.345;
+        default:                   return 0;
+    }
+    return 0; //! needed or compiler will whinge
 }
 
 bool IsInitialBlockDownload()
