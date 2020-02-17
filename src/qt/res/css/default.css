@@ -1,0 +1,8 @@
+WalletFrame {
+border-image: url(':/icons/background') 0 0 0 0 stretch stretch;
+background-color: qlineargradient(y1:0, y2: 1, stop: 0 #372f44, stop: 0.75 #372f44, stop: 0.99 #ffffff, stop: 1 #ffffff);
+border-top:0px solid transparent;
+margin:0;
+padding-top:0px;
+padding-bottom: 0px;
+}
