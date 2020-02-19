@@ -31,7 +31,7 @@
 #include <masternodeman.h>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/adultchain-config.h>
 #endif
 #ifdef ENABLE_WALLET
 #include <wallet/fees.h>
