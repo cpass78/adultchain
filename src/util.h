@@ -380,6 +380,6 @@ inline void insert(std::set<TsetT>& dst, const Tsrc& src) {
     dst.insert(src.begin(), src.end());
 }
 
-}
+} // namespace util
 
 #endif // BITCOIN_UTIL_H
