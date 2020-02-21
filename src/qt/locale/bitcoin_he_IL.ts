@@ -66,11 +66,11 @@
         <translation>מקבל כתובות</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Adultchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>אלו הן כתובות הביטקוין שלך לשליחת תשלומים. תמיד בדוק את כתובת הארנק המקבל לפני שליחת מטבעות</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Adultchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>אלו הן כתובות הביטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה בכל העברת מטבעות</translation>
     </message>
     <message>
@@ -270,11 +270,11 @@
         <translation>הצפן מפתח פרטי ששייך לארנק שלך</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Adultchain addresses to prove you own them</source>
         <translation>חתום על הודעה עם כתובות הביטקוין שלך על מנת להוכיח שהן שלך</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Adultchain addresses</source>
         <translation>וודא הודעות להבטיח שהן חתומות עם כתובות ביטקוין מוגדרות</translation>
     </message>
     <message>
@@ -330,7 +330,7 @@
         <translation>מעודכן</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Adultchain command-line options</source>
         <translation>הראה את %1 מהודעות עזרה על מנת לקבל רשימה עם פקודות ביטקוין אפשריות</translation>
     </message>
     <message>
@@ -381,7 +381,7 @@
         <translation>הארנק 1מוצפן1 וכעת 2 נעול</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Adultchain can no longer continue safely and will quit.</source>
         <translation>אירעה שגיאה חמורה. ביטקוין לא יכול להמשיך בבטחה ויתנתק</translation>
     </message>
 </context>
@@ -627,7 +627,7 @@
         <translation>ביטקוין</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Adultchain block chain.</source>
         <translation>%1 ירד וישמור עותק של שרשרת הבלוקים של ביטקוין.</translation>
     </message>
     <message>
@@ -968,7 +968,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     <message>
         <source>Information</source>
         <translation>מידע</translation>

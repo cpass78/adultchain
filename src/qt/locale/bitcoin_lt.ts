@@ -66,12 +66,12 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tai yra jūsų Bitcoin adresai išeinantiems mokėjimams. Visada pasitikrinkite sumą ir gavėjo adresą prieš siunčiant lėšas. </translation>
+        <source>These are your Adultchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai yra jūsų Adultchain adresai išeinantiems mokėjimams. Visada pasitikrinkite sumą ir gavėjo adresą prieš siunčiant lėšas. </translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Tai yra Jūsų Bitcoin adresai įeinantiems mokėjimams. Kiekvienam mokėjimui rekomenduojama naudoti naują adresą. </translation>
+        <source>These are your Adultchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tai yra Jūsų Adultchain adresai įeinantiems mokėjimams. Kiekvienam mokėjimui rekomenduojama naudoti naują adresą. </translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>Siųsti monetas Bitcoin adresui</translation>
+        <translation>Siųsti monetas Adultchain adresui</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -410,12 +410,12 @@
         <translation>Užšifruoti privačius raktus, kurie priklauso jūsų piniginei</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Pasirašydami žinutes su savo Bitcoin adresais įrodysite jog esate jų savininkas </translation>
+        <source>Sign messages with your Adultchain addresses to prove you own them</source>
+        <translation>Pasirašydami žinutes su savo Adultchain adresais įrodysite jog esate jų savininkas </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Bitcoin adresas</translation>
+        <source>Verify messages to ensure they were signed with specified Adultchain addresses</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Adultchain adresas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -490,8 +490,8 @@
         <translation>Atnaujinta</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Rodyti %1 pagalbos žinutę su Bitcoin pasirinkimo komandomis</translation>
+        <source>Show the %1 help message to get a list with possible Adultchain command-line options</source>
+        <translation>Rodyti %1 pagalbos žinutę su Adultchain pasirinkimo komandomis</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -566,8 +566,8 @@
         <translation>Piniginė &lt;b&gt;užšifruota&lt;/b&gt; ir šiuo metu &lt;b&gt;užrakinta&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Kritinė klaida. Bitcoin nebegali tęsti saugiai ir bus išjungtas.</translation>
+        <source>A fatal error occurred. Adultchain can no longer continue safely and will quit.</source>
+        <translation>Kritinė klaida. Adultchain nebegali tęsti saugiai ir bus išjungtas.</translation>
     </message>
 </context>
 <context>
@@ -757,7 +757,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Adultchain address.</source>
-        <translation>Įvestas adresas „%1“ nėra galiojantis Bitcoin adresas.</translation>
+        <translation>Įvestas adresas „%1“ nėra galiojantis Adultchain adresas.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -865,8 +865,8 @@
         <translation>Šiame kataloge bus saugoma maždaug apie %1 GB duomenų.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 bus atsisiųsta ir išsaugota Bitcoin blokų grandinės kopiją.</translation>
+        <source>%1 will download and store a copy of the Adultchain block chain.</source>
+        <translation>%1 bus atsisiųsta ir išsaugota Adultchain blokų grandinės kopiją.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1070,8 +1070,8 @@
         <translation>&amp;Išleiskite nepatvirtintus pakeitimus</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Bitcoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the Adultchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti Adultchain kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1312,8 +1312,8 @@
         <translation>URI tvarkymas</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>„adultchain: //“ nėra galiojantis URI. Vietoj to naudokite „bitcoin:“.</translation>
+        <source>'adultchain://' is not a valid URI. Use 'adultchain:' instead.</source>
+        <translation>„adultchain: //“ nėra galiojantis URI. Vietoj to naudokite „adultchain:“.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1427,7 +1427,7 @@
     </message>
     <message>
         <source>Enter a Adultchain address (e.g. %1)</source>
-        <translation>Įveskite Bitcoin adresą (pvz., %1)</translation>
+        <translation>Įveskite Adultchain adresą (pvz., %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2265,7 +2265,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
     <message>
         <source>Warning: Invalid Adultchain address</source>
-        <translation>Įspėjimas: neteisingas Bitcoin adresas</translation>
+        <translation>Įspėjimas: neteisingas Adultchain adresas</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2308,7 +2308,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
     <message>
         <source>The Adultchain address to send the payment to</source>
-        <translation>Bitcoin adresas, į kurį siunčiamas mokėjimas</translation>
+        <translation>Adultchain adresas, į kurį siunčiamas mokėjimas</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2401,7 +2401,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
     <message>
         <source>The Adultchain address to sign the message with</source>
-        <translation>Bitcoin adresas, kuriuo bus pasirašytas pranešimas su</translation>
+        <translation>Adultchain adresas, kuriuo bus pasirašytas pranešimas su</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2453,11 +2453,11 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
     <message>
         <source>The Adultchain address the message was signed with</source>
-        <translation>Bitcoin adresas, kuriuo buvo pasirašytas pranešimas</translation>
+        <translation>Adultchain adresas, kuriuo buvo pasirašytas pranešimas</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Adultchain address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Bitcoin adresas</translation>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Adultchain adresas</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3035,10 +3035,10 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 sat
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin branduolys</translation>
+        <source>Adultchain Core</source>
+        <translation>Adultchain branduolys</translation>
     </message>
     <message>
         <source>The %s developers</source>

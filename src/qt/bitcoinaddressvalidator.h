@@ -20,7 +20,7 @@ public:
     State validate(QString &input, int &pos) const;
 };
 
-/** Adultchain address widget validator, checks for a valid bitcoin address.
+/** Adultchain address widget validator, checks for a valid adultchain address.
  */
 class BitcoinAddressCheckValidator : public QValidator
 {

@@ -604,9 +604,9 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Adultchain Core</source>
         <translation>Биткоин Core</translation>
     </message>
     <message>

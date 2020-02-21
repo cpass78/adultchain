@@ -158,7 +158,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation>আপনি কি পুনরায় ব্লক ডাটাবেইজ এখনই তৈরি করতে চান?</translation>

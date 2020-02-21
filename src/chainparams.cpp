@@ -160,14 +160,13 @@ public:
 
         checkpointData = {
             {
-                { 0, uint256S("") },
+                {  1, uint256S("00008da450810d6351fca08622323175739a257a6c112a2f02d2102e61369c2e") },
+                {  6, uint256S("00005f66b69ba1f93afdb9d279741a3d6c8f502ba62491b6ba49fd4c06f11013") },
+                { 10, uint256S("00002d5ca930222e8e8626e5f6582becbdccc7aae8e253602fd47b8a072d8d19") },
             }
         };
 
         chainTxData = ChainTxData{
-            0,
-            1,
-            1.0
         };
 
         /* disable fallback fee on mainnet */

@@ -178,6 +178,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     </context>
 </TS>

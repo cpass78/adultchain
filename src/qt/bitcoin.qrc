@@ -1,7 +1,7 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource prefix="/icons">
         <file alias="bitcoin">res/icons/bitcoin.png</file>
-		<file alias="background">res/icons/background.png</file>
+	<file alias="background">res/icons/background.png</file>
         <file alias="address-book">res/icons/address-book.png</file>
         <file alias="quit">res/icons/quit.png</file>
         <file alias="send">res/icons/send.png</file>
@@ -57,6 +57,9 @@
         <file alias="proxy">res/icons/proxy.png</file>
         <file alias="staking_active">res/icons/staking_active.png</file>
         <file alias="staking_inactive">res/icons/staking_inactive.png</file>
+        <file alias="splash">res/icons/splash.png</file>
+        <file alias="splash_testnet">res/icons/splash_testnet.png</file>
+        <file alias="splash_regtest">res/icons/splash_regtest.png</file>
     </qresource>
     <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>

@@ -152,7 +152,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Bitcoin មួយ</translation>
+        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Adultchain មួយ</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -315,6 +315,6 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     </context>
 </TS>

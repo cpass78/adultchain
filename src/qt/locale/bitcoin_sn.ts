@@ -195,7 +195,7 @@
     </message>
     <message>
         <source>Enter a Adultchain address (e.g. %1)</source>
-        <translation>Nyora kero ye Bitcoin (sekuti %1)</translation>
+        <translation>Nyora kero ye Adultchain (sekuti %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -354,7 +354,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     <message>
         <source>Information</source>
         <translation>Ruzivo</translation>

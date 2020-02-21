@@ -646,7 +646,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>adultchain-core</name>
     <message>
         <source>Loading wallet...</source>
         <translation>Načítání peněženky...</translation>

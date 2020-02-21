@@ -323,7 +323,10 @@ RES_ICONS = \
   qt/res/icons/verify.png \
   qt/res/icons/masternodes.png \
   qt/res/icons/staking_active.png \
-  qt/res/icons/staking_inactive.png
+  qt/res/icons/staking_inactive.png \
+  qt/res/icons/splash.png \
+  qt/res/icons/splash_regtest.png \
+  qt/res/icons/splash_testnet.png
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
