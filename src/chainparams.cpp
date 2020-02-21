@@ -156,7 +156,7 @@ public:
         nCollateralLevels = { 200000 };
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 60*60;
-        strSporkPubKey = "";
+        strSporkPubKey = "XVUrXoFWAzCohwgkQJjv7mxGrBvMTyNgBS";
 
         checkpointData = {
             {
