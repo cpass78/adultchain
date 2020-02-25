@@ -217,15 +217,11 @@ static bool LoadExtensionsDataCaches()
        return InitError(_("Failed to load masternode cache from") + "\n" + (pathDB / strDBName).string());
     }
 
-    if(mnodeman.size()) {
-        strDBName = "mnpayments.dat";
-        uiInterface.InitMessage(_("Loading masternode payment cache..."));
-        CFlatDB<CMasternodePayments> flatdb2(strDBName, "magicMasternodePaymentsCache");
-        if(!flatdb2.Load(mnpayments)) {
-           return InitError(_("Failed to load masternode payments cache from") + "\n" + (pathDB / strDBName).string());
-        }
-    } else {
-        uiInterface.InitMessage(_("Masternode cache is empty, skipping payments..."));
+    strDBName = "mnpayments.dat";
+    uiInterface.InitMessage(_("Loading masternode payment cache..."));
+    CFlatDB<CMasternodePayments> flatdb2(strDBName, "magicMasternodePaymentsCache");
+    if(!flatdb2.Load(mnpayments)) {
+       return InitError(_("Failed to load masternode payments cache from") + "\n" + (pathDB / strDBName).string());
     }
 
     strDBName = "netfulfilled.dat";
