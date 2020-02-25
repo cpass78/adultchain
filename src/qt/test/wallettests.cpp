@@ -2,7 +2,7 @@
 #include <qt/test/util.h>
 
 #include <interfaces/node.h>
-#include <qt/bitcoinamountfield.h>
+#include <qt/adultchainamountfield.h>
 #include <qt/callback.h>
 #include <qt/optionsmodel.h>
 #include <qt/platformstyle.h>
@@ -13,7 +13,7 @@
 #include <qt/transactionview.h>
 #include <qt/walletmodel.h>
 #include <key_io.h>
-#include <test/test_bitcoin.h>
+#include <test/test_adultchain.h>
 #include <validation.h>
 #include <wallet/wallet.h>
 #include <qt/overviewpage.h>

@@ -241,7 +241,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Üzenet aláírása...</translation>
@@ -383,8 +383,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>

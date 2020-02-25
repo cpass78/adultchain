@@ -180,7 +180,7 @@
         <translation>ቦርሳዎ ምስጢር ተደርጓል</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
         <translation>%1 የማመስጠር ሂደቱን ለመጨረስ አሁን ይዘጋል:: ያስታውሱ፣ ኮምፒተርዎ በተንኮል አዘል ሶፍትዌር ከተበከለ ቦርሳዎን ማመስጠር ቢትኮይኖቾን ሙሉበሙሉ እንዳይሰረቁ ሊከላከል አይችልም::</translation>
     </message>
     <message>
@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>ምልክትና መልእክት...</translation>

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_BITCOINGUI_H
-#define BITCOIN_QT_BITCOINGUI_H
+#ifndef ADULTCHAIN_QT_ADULTCHAINGUI_H
+#define ADULTCHAIN_QT_ADULTCHAINGUI_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/adultchain-config.h>
@@ -68,7 +68,7 @@ public:
 
 #ifdef ENABLE_WALLET
     /** Set the wallet model.
-        The wallet model represents a bitcoin wallet, and offers access to the list of transactions, address book and sending
+        The wallet model represents a adultchain wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
     bool addWallet(WalletModel *walletModel);
@@ -340,4 +340,4 @@ private Q_SLOTS:
     void onMenuSelection(QAction* action);
 };
 
-#endif // BITCOIN_QT_BITCOINGUI_H
+#endif // ADULTCHAIN_QT_ADULTCHAINGUI_H

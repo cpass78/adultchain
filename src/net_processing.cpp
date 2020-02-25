@@ -1037,7 +1037,7 @@ bool static AlreadyHave(const CInv& inv) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
 
 
     // process one of the extensions
-    return net_processing_bitcoin::AlreadyHave(inv);
+    return net_processing_adultchain::AlreadyHave(inv);
 }
 
 static void RelayTransaction(const CTransaction& tx, CConnman* connman)
@@ -1248,7 +1248,7 @@ void static ProcessGetData(CNode* pfrom, const Consensus::Params& consensusParam
             CInv &inv = *it;
             it++;
 
-            net_processing_bitcoin::TransformInvForLegacyVersion(inv, pfrom, false);
+            net_processing_adultchain::TransformInvForLegacyVersion(inv, pfrom, false);
 
             // Send stream from relay memory
             bool push = false;
@@ -1275,7 +1275,7 @@ void static ProcessGetData(CNode* pfrom, const Consensus::Params& consensusParam
             }
             else
             {
-                push = net_processing_bitcoin::ProcessGetData(pfrom, consensusParams, connman, inv);
+                push = net_processing_adultchain::ProcessGetData(pfrom, consensusParams, connman, inv);
             }
 
             if (!push) {
@@ -1940,7 +1940,7 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
             if (interruptMsgProc)
                 return true;
 
-            net_processing_bitcoin::TransformInvForLegacyVersion(inv, pfrom, false);
+            net_processing_adultchain::TransformInvForLegacyVersion(inv, pfrom, false);
 
             bool fAlreadyHave = AlreadyHave(inv);
             LogPrint(BCLog::NET, "got inv: %s  %s peer=%d\n", inv.ToString(), fAlreadyHave ? "have" : "new", pfrom->GetId());
@@ -2956,7 +2956,7 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
         const auto &allMessages = getAllNetMessageTypes();
         if(std::find(std::begin(allMessages), std::end(allMessages), strCommand) != std::end(allMessages))
         {
-            net_processing_bitcoin::ProcessExtension(pfrom, strCommand, vRecv, connman);
+            net_processing_adultchain::ProcessExtension(pfrom, strCommand, vRecv, connman);
         }
         else
         {
@@ -3656,7 +3656,7 @@ bool PeerLogicValidation::SendMessages(CNode* pto, std::atomic<bool>& interruptM
 
             for(auto &&inv : pto->vInventoryToSend)
             {
-                net_processing_bitcoin::TransformInvForLegacyVersion(inv, pto, true);
+                net_processing_adultchain::TransformInvForLegacyVersion(inv, pto, true);
                 vInv.push_back(inv);
                 if (vInv.size() == MAX_INV_SZ)
                 {
@@ -3766,7 +3766,7 @@ bool PeerLogicValidation::SendMessages(CNode* pto, std::atomic<bool>& interruptM
                          pto->GetSendVersion(),
                          pto->GetRecvVersion());
 
-                net_processing_bitcoin::TransformInvForLegacyVersion(inv, pto, true);
+                net_processing_adultchain::TransformInvForLegacyVersion(inv, pto, true);
 
                 vGetData.push_back(inv);
                 if (vGetData.size() >= 1000)
@@ -3913,7 +3913,7 @@ static const MapSporkHandlers &GetMapGetDataHandlers()
     return sporkHandlers;
 }
 
-bool net_processing_bitcoin::ProcessGetData(CNode *pfrom, const Consensus::Params &consensusParams, CConnman *connman, const CInv &inv)
+bool net_processing_adultchain::ProcessGetData(CNode *pfrom, const Consensus::Params &consensusParams, CConnman *connman, const CInv &inv)
 {
     const auto &handlersMap = GetMapGetDataHandlers();
     auto it = handlersMap.find(inv.type);
@@ -3930,7 +3930,7 @@ bool net_processing_bitcoin::ProcessGetData(CNode *pfrom, const Consensus::Param
     return false;
 }
 
-void net_processing_bitcoin::ProcessExtension(CNode *pfrom, const std::string &strCommand, CDataStream &vRecv, CConnman *connman)
+void net_processing_adultchain::ProcessExtension(CNode *pfrom, const std::string &strCommand, CDataStream &vRecv, CConnman *connman)
 {
     mnodeman.ProcessMessage(pfrom, strCommand, vRecv, *connman);
     mnpayments.ProcessMessage(pfrom, strCommand, vRecv, *connman);
@@ -3938,7 +3938,7 @@ void net_processing_bitcoin::ProcessExtension(CNode *pfrom, const std::string &s
     masternodeSync.ProcessMessage(pfrom, strCommand, vRecv);
 }
 
-void net_processing_bitcoin::ThreadProcessExtensions(CConnman *pConnman)
+void net_processing_adultchain::ThreadProcessExtensions(CConnman *pConnman)
 {
     if(fLiteMode) return; // disable all Bitcoin specific functionality
 
@@ -3947,7 +3947,7 @@ void net_processing_bitcoin::ThreadProcessExtensions(CConnman *pConnman)
     fOneThread = true;
 
     // Make this thread recognisable as the PrivateSend thread
-    RenameThread("bitcoin-ps");
+    RenameThread("adultchain-ps");
 
     unsigned int nTick = 0;
 
@@ -3987,7 +3987,7 @@ void net_processing_bitcoin::ThreadProcessExtensions(CConnman *pConnman)
     }
 }
 
-bool net_processing_bitcoin::AlreadyHave(const CInv &inv)
+bool net_processing_adultchain::AlreadyHave(const CInv &inv)
 {
     switch(inv.type)
     {
@@ -4062,7 +4062,7 @@ static int MapCurrentToLegacy(int nCurrentType)
     return nCurrentType;
 }
 
-bool net_processing_bitcoin::TransformInvForLegacyVersion(CInv &inv, CNode *pfrom, bool fForSending)
+bool net_processing_adultchain::TransformInvForLegacyVersion(CInv &inv, CNode *pfrom, bool fForSending)
 {
     if(pfrom->GetSendVersion() == PRESEGWIT_PROTO_VERSION)
     {

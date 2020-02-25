@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Adultchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Adultchain para enviar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar bitcoins.</translation>
+        <translation>Estas son sus direcciones Adultchain para enviar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar xxxs.</translation>
     </message>
     <message>
         <source>These are your Adultchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -188,7 +188,7 @@
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
         <translation>%1 se cerrará ahora para terminar el proceso de cifrado. Recuerde que cifrar su monedero no puede proteger completamente su monedero de ser robado por malware que infecte su ordenador.</translation>
     </message>
     <message>
@@ -240,7 +240,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>Enviar bitcoins a una dirección Bitcoin</translation>
+        <translation>Enviar xxxs a una dirección AdultChain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -382,8 +382,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -455,7 +455,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Adultchain network</source>
-        <translation><numerusform>%n conexión activa hacia la red Bitcoin</numerusform><numerusform>%n conexiones activas hacia la red Bitcoin</numerusform></translation>
+        <translation><numerusform>%n conexión activa hacia la red AdultChain</numerusform><numerusform>%n conexiones activas hacia la red AdultChain</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -499,7 +499,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Adultchain command-line options</source>
-        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de Bitcoin</translation>
+        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de AdultChain</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -860,8 +860,8 @@
         <translation>Utilizar un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -873,7 +873,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Adultchain block chain.</source>
-        <translation>%1 descargará y almacenará una copia de la cadena de bloques de Bitcoin.</translation>
+        <translation>%1 descargará y almacenará una copia de la cadena de bloques de AdultChain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -903,8 +903,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de bitcoin, como se detalla abajo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the adultchain network, as detailed below.</source>
+        <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de adultchain, como se detalla abajo.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1898,7 +1898,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Adultchain network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red Bitcoin.</translation>
+        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red AdultChain.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2422,7 +2422,7 @@ Nota: Dado que la comisión se calcula por byte, una comisión de "100 satoshis 
     </message>
     <message>
         <source>A message that was attached to the adultchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Adultchain network.</source>
-        <translation>Un mensaje que se adjuntó a la adultchain: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red Bitcoin.</translation>
+        <translation>Un mensaje que se adjuntó a la adultchain: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red AdultChain.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2503,7 +2503,7 @@ Nota: Dado que la comisión se calcula por byte, una comisión de "100 satoshis 
     </message>
     <message>
         <source>Sign the message to prove you own this Adultchain address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Bitcoin</translation>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección AdultChain</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

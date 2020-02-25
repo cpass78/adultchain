@@ -371,11 +371,11 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and adultchain: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja bitcoini: URId)</translation>
+        <translation>Loo maksepäring (genereerib QR koodid ja adultchaini: URId)</translation>
     </message>
     <message>
         <source>Open a adultchain: URI or payment request</source>
-        <translation>Ava bitcoini: URI või maksepäring</translation>
+        <translation>Ava adultchaini: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

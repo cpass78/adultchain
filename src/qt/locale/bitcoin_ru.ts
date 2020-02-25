@@ -188,7 +188,7 @@
         <translation>Кошелек зашифрован</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
         <translation>%1 закроется сейчас для завершения процесса шифрования. Запомните что шифрование вашего кошелька не сможет полностью защитить ваши биткойны от кражи при помощи вредоносного ПО, заразившего ваш компьютер.</translation>
     </message>
     <message>
@@ -240,7 +240,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подписать &amp;сообщение...</translation>
@@ -382,7 +382,7 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>AdultChain</source>
         <translation>Adultchain Core</translation>
     </message>
     <message>
@@ -455,7 +455,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Adultchain network</source>
-        <translation><numerusform>%n активное подключение к сети Bitcoin</numerusform><numerusform>%n активных подключения к сети Bitcoin</numerusform><numerusform>%n активных подключений к сети Bitcoin</numerusform><numerusform>%n активных подключений к сети Bitcoin</numerusform></translation>
+        <translation><numerusform>%n активное подключение к сети AdultChain</numerusform><numerusform>%n активных подключения к сети AdultChain</numerusform><numerusform>%n активных подключений к сети AdultChain</numerusform><numerusform>%n активных подключений к сети AdultChain</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -761,7 +761,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Adultchain address.</source>
-        <translation>Введенный адрес "%1" не является действительным адресом Bitcoin.</translation>
+        <translation>Введенный адрес "%1" не является действительным адресом AdultChain.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -853,7 +853,7 @@
         <translation>Использовать пользовательскую директорию данных</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>AdultChain</source>
         <translation>Adultchain Core</translation>
     </message>
     <message>
@@ -896,11 +896,11 @@
         <translation>Форма</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the adultchain network, as detailed below.</source>
         <translation>Последние транзакции пока могут быть не видны, поэтому вы можете видеть некорректный баланс ваших кошельков. Отображаемая информация будет верна после завершения синхронизации. Прогресс синхронизации вы можете видеть ниже.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend xxxs that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Попытка потратить средства, использованные в транзакциях, которые ещё не синхронизированы, будет отклонена сетью.</translation>
     </message>
     <message>
@@ -1087,7 +1087,7 @@
     </message>
     <message>
         <source>Automatically open the Adultchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для Bitcoin-клиента на маршрутизаторе. Работает только если Ваш маршрутизатор поддерживает UPnP, и данная функция включена.</translation>
+        <translation>Автоматически открыть порт для AdultChain-клиента на маршрутизаторе. Работает только если Ваш маршрутизатор поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1341,7 +1341,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Adultchain address or malformed URI parameters.</source>
-        <translation>Не удалось обработать идентификатор! Это может быть связано с неверным Bitcoin-адресом или неправильными параметрами идентификатора.</translation>
+        <translation>Не удалось обработать идентификатор! Это может быть связано с неверным AdultChain-адресом или неправильными параметрами идентификатора.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1883,7 +1883,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Adultchain network.</source>
-        <translation>Необязательное сообщение для запроса платежа, которое будет показано при открытии запроса. Заметьте: сообщение не будет отправлено вместе с платежом через сеть Bitcoin.</translation>
+        <translation>Необязательное сообщение для запроса платежа, которое будет показано при открытии запроса. Заметьте: сообщение не будет отправлено вместе с платежом через сеть AdultChain.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2135,7 +2135,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Спрятать</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for xxx transactions than the network can process.</source>
         <translation>Оплата только минимальной комиссии - это нормально, если объем транзакций меньше, чем места в блоках. Но имейте в виду, что это может привести к тому, что транзакция никогда не будет подтверждена, если спрос на биткойн-транзакции будет больше, чем может обработать сеть.</translation>
     </message>
     <message>
@@ -2351,7 +2351,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>The Adultchain address to send the payment to</source>
-        <translation>Bitcoin-адрес, на который отправить платёж</translation>
+        <translation>AdultChain-адрес, на который отправить платёж</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2370,7 +2370,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Удалить эту запись</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xxxs than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>С отправляемой суммы будет удержана комиссия. Получателю придёт меньше биткоинов, чем вы вводите в поле количества. Если выбрано несколько получателей, комиссия распределяется поровну.</translation>
     </message>
     <message>
@@ -2399,7 +2399,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>A message that was attached to the adultchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Adultchain network.</source>
-        <translation>Сообщение прикрепленное к bitcoin идентификатору будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Bitcoin.</translation>
+        <translation>Сообщение прикрепленное к bitcoin идентификатору будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть AdultChain.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2448,7 +2448,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>The Adultchain address to sign the message with</source>
-        <translation>Bitcoin-адрес, которым подписать сообщение</translation>
+        <translation>AdultChain-адрес, которым подписать сообщение</translation>
     </message>
     <message>
         <source>Choose previously used address</source>

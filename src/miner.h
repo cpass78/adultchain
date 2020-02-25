@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_MINER_H
-#define BITCOIN_MINER_H
+#ifndef ADULTCHAIN_MINER_H
+#define ADULTCHAIN_MINER_H
 
 #include <primitives/block.h>
 #include <txmempool.h>
@@ -211,4 +211,4 @@ int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParam
 void GenerateBitcoins(bool fGenerate, int nThreads, const CChainParams& chainparams, CConnman &connman);
 void ThreadStakeMinter(const CChainParams& chainparams, CConnman &connman, CWallet *pwallet);
 
-#endif // BITCOIN_MINER_H
+#endif // ADULTCHAIN_MINER_H

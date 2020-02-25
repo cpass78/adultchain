@@ -2,7 +2,7 @@ FreeBSD build guide
 ======================
 (updated for FreeBSD 11.1)
 
-This guide describes how to build bitcoind and command-line utilities on FreeBSD.
+This guide describes how to build adultchaind and command-line utilities on FreeBSD.
 
 This guide does not contain instructions for building the GUI.
 
@@ -27,7 +27,7 @@ Download the source code:
 git clone https://github.com/bitcoin/bitcoin
 ```
 
-## Building Bitcoin Core
+## Building AdultChain Core
 
 **Important**: Use `gmake` (the non-GNU `make` will exit with an error).
 

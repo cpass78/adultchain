@@ -19,42 +19,42 @@ else
 LIBUNIVALUE = $(UNIVALUE_LIBS)
 endif
 
-BITCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
+ADULTCHAIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
-BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
-BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
+ADULTCHAIN_INCLUDES += -I$(srcdir)/secp256k1/include
+ADULTCHAIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
-LIBBITCOIN_SERVER=libadultchain_server.a
-LIBBITCOIN_COMMON=libadultchain_common.a
-LIBBITCOIN_CONSENSUS=libadultchain_consensus.a
-LIBBITCOIN_CLI=libadultchain_cli.a
-LIBBITCOIN_UTIL=libadultchain_util.a
-LIBBITCOIN_CRYPTO_BASE=crypto/libadultchain_crypto_base.a
-LIBBITCOINQT=qt/libadultchainqt.a
+LIBADULTCHAIN_SERVER=libadultchain_server.a
+LIBADULTCHAIN_COMMON=libadultchain_common.a
+LIBADULTCHAIN_CONSENSUS=libadultchain_consensus.a
+LIBADULTCHAIN_CLI=libadultchain_cli.a
+LIBADULTCHAIN_UTIL=libadultchain_util.a
+LIBADULTCHAIN_CRYPTO_BASE=crypto/libadultchain_crypto_base.a
+LIBADULTCHAINQT=qt/libadultchainqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBBITCOIN_ZMQ=libadultchain_zmq.a
+LIBADULTCHAIN_ZMQ=libadultchain_zmq.a
 endif
-if BUILD_BITCOIN_LIBS
-LIBBITCOINCONSENSUS=libadultchainconsensus.la
+if BUILD_ADULTCHAIN_LIBS
+LIBADULTCHAINCONSENSUS=libadultchainconsensus.la
 endif
 if ENABLE_WALLET
-LIBBITCOIN_WALLET=libadultchain_wallet.a
+LIBADULTCHAIN_WALLET=libadultchain_wallet.a
 endif
 
-LIBBITCOIN_CRYPTO= $(LIBBITCOIN_CRYPTO_BASE)
+LIBADULTCHAIN_CRYPTO= $(LIBADULTCHAIN_CRYPTO_BASE)
 if ENABLE_SSE41
-LIBBITCOIN_CRYPTO_SSE41 = crypto/libadultchain_crypto_sse41.a
-LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_SSE41)
+LIBADULTCHAIN_CRYPTO_SSE41 = crypto/libadultchain_crypto_sse41.a
+LIBADULTCHAIN_CRYPTO += $(LIBADULTCHAIN_CRYPTO_SSE41)
 endif
 if ENABLE_AVX2
-LIBBITCOIN_CRYPTO_AVX2 = crypto/libadultchain_crypto_avx2.a
-LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_AVX2)
+LIBADULTCHAIN_CRYPTO_AVX2 = crypto/libadultchain_crypto_avx2.a
+LIBADULTCHAIN_CRYPTO += $(LIBADULTCHAIN_CRYPTO_AVX2)
 endif
 if ENABLE_SHANI
-LIBBITCOIN_CRYPTO_SHANI = crypto/libadultchain_crypto_shani.a
-LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_SHANI)
+LIBADULTCHAIN_CRYPTO_SHANI = crypto/libadultchain_crypto_shani.a
+LIBADULTCHAIN_CRYPTO += $(LIBADULTCHAIN_CRYPTO_SHANI)
 endif
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(wildcard secp256k1/include/*)
@@ -63,33 +63,33 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(w
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
-  $(LIBBITCOIN_CRYPTO) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_SERVER) \
-  $(LIBBITCOIN_CLI) \
-  $(LIBBITCOIN_WALLET) \
-  $(LIBBITCOIN_ZMQ)
+  $(LIBADULTCHAIN_CRYPTO) \
+  $(LIBADULTCHAIN_UTIL) \
+  $(LIBADULTCHAIN_COMMON) \
+  $(LIBADULTCHAIN_CONSENSUS) \
+  $(LIBADULTCHAIN_SERVER) \
+  $(LIBADULTCHAIN_CLI) \
+  $(LIBADULTCHAIN_WALLET) \
+  $(LIBADULTCHAIN_ZMQ)
 
-lib_LTLIBRARIES = $(LIBBITCOINCONSENSUS)
+lib_LTLIBRARIES = $(LIBADULTCHAINCONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =
 TESTS =
 BENCHMARKS =
 
-if BUILD_BITCOIND
+if BUILD_ADULTCHAIND
   bin_PROGRAMS += adultchaind
 endif
 
-if BUILD_BITCOIN_UTILS
+if BUILD_ADULTCHAIN_UTILS
   bin_PROGRAMS += adultchain-cli adultchain-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
 # adultchain core #
-BITCOIN_CORE_H = \
+ADULTCHAIN_CORE_H = \
   activemasternode.h \
   addrdb.h \
   addrman.h \
@@ -227,7 +227,7 @@ obj/build.h: FORCE
 libadultchain_util_a-clientversion.$(OBJEXT): obj/build.h
 
 # server: shared between adultchaind and adultchain-qt
-libadultchain_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libadultchain_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libadultchain_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libadultchain_server_a_SOURCES = \
   activemasternode.cpp \
@@ -283,10 +283,10 @@ libadultchain_server_a_SOURCES = \
   validation.cpp \
   validationinterface.cpp \
   versionbits.cpp \
-  $(BITCOIN_CORE_H)
+  $(ADULTCHAIN_CORE_H)
 
 if ENABLE_ZMQ
-libadultchain_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+libadultchain_zmq_a_CPPFLAGS = $(ADULTCHAIN_INCLUDES) $(ZMQ_CFLAGS)
 libadultchain_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libadultchain_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
@@ -298,7 +298,7 @@ endif
 
 # wallet: shared between adultchaind and adultchain-qt, but only linked
 # when wallet enabled
-libadultchain_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libadultchain_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES)
 libadultchain_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libadultchain_wallet_a_SOURCES = \
   outputtype.cpp \
@@ -315,7 +315,7 @@ libadultchain_wallet_a_SOURCES = \
   wallet/walletdb.cpp \
   wallet/walletutil.cpp \
   wallet/coinselection.cpp \
-  $(BITCOIN_CORE_H)
+  $(ADULTCHAIN_CORE_H)
 
 # crypto primitives library
 crypto_libadultchain_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS) $(SSL_CFLAGS)
@@ -365,7 +365,7 @@ crypto_libadultchain_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
 crypto_libadultchain_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
 
 # consensus: shared between all executables that validate any consensus rules.
-libadultchain_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libadultchain_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES)
 libadultchain_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libadultchain_consensus_a_SOURCES = \
   amount.h \
@@ -401,7 +401,7 @@ libadultchain_consensus_a_SOURCES = \
   version.h
 
 # common: shared between adultchaind, and adultchain-qt and non-server tools
-libadultchain_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libadultchain_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES)
 libadultchain_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libadultchain_common_a_SOURCES = \
   base58.cpp \
@@ -423,12 +423,12 @@ libadultchain_common_a_SOURCES = \
   script/sign.cpp \
   script/standard.cpp \
   warnings.cpp \
-  $(BITCOIN_CORE_H)
+  $(ADULTCHAIN_CORE_H)
 
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libadultchain_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libadultchain_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES)
 libadultchain_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libadultchain_util_a_SOURCES = \
   support/lockedpool.cpp \
@@ -451,7 +451,7 @@ libadultchain_util_a_SOURCES = \
   utilmoneystr.cpp \
   utilstrencodings.cpp \
   utiltime.cpp \
-  $(BITCOIN_CORE_H)
+  $(ADULTCHAIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
 libadultchain_util_a_SOURCES += compat/glibc_compat.cpp
@@ -459,18 +459,18 @@ AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
 # cli: shared between adultchain-cli and adultchain-qt
-libadultchain_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libadultchain_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES)
 libadultchain_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libadultchain_cli_a_SOURCES = \
   rpc/client.cpp \
-  $(BITCOIN_CORE_H)
+  $(ADULTCHAIN_CORE_H)
 
 nodist_libadultchain_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # adultchaind binary #
 adultchaind_SOURCES = adultchaind.cpp
-adultchaind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+adultchaind_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES)
 adultchaind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 adultchaind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
@@ -479,14 +479,14 @@ adultchaind_SOURCES += adultchaind-res.rc
 endif
 
 adultchaind_LDADD = \
-  $(LIBBITCOIN_SERVER) \
-  $(LIBBITCOIN_WALLET) \
-  $(LIBBITCOIN_COMMON) \
+  $(LIBADULTCHAIN_SERVER) \
+  $(LIBADULTCHAIN_WALLET) \
+  $(LIBADULTCHAIN_COMMON) \
   $(LIBUNIVALUE) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_ZMQ) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_CRYPTO) \
+  $(LIBADULTCHAIN_UTIL) \
+  $(LIBADULTCHAIN_ZMQ) \
+  $(LIBADULTCHAIN_CONSENSUS) \
+  $(LIBADULTCHAIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBLEVELDB_SSE42) \
   $(LIBMEMENV) \
@@ -496,7 +496,7 @@ adultchaind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINI
 
 # adultchain-cli binary #
 adultchain_cli_SOURCES = adultchain-cli.cpp
-adultchain_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+adultchain_cli_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES) $(EVENT_CFLAGS)
 adultchain_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 adultchain_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
@@ -505,17 +505,17 @@ adultchain_cli_SOURCES += adultchain-cli-res.rc
 endif
 
 adultchain_cli_LDADD = \
-  $(LIBBITCOIN_CLI) \
+  $(LIBADULTCHAIN_CLI) \
   $(LIBUNIVALUE) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CRYPTO)
+  $(LIBADULTCHAIN_UTIL) \
+  $(LIBADULTCHAIN_CRYPTO)
 
 adultchain_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # adultchain-tx binary #
 adultchain_tx_SOURCES = adultchain-tx.cpp
-adultchain_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+adultchain_tx_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES)
 adultchain_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 adultchain_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
@@ -525,17 +525,17 @@ endif
 
 adultchain_tx_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_CRYPTO) \
+  $(LIBADULTCHAIN_COMMON) \
+  $(LIBADULTCHAIN_UTIL) \
+  $(LIBADULTCHAIN_CONSENSUS) \
+  $(LIBADULTCHAIN_CRYPTO) \
   $(LIBSECP256K1)
 
 adultchain_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # adultchainconsensus library #
-if BUILD_BITCOIN_LIBS
+if BUILD_ADULTCHAIN_LIBS
 include_HEADERS = script/adultchainconsensus.h
 libadultchainconsensus_la_SOURCES = $(crypto_libadultchain_crypto_base_a_SOURCES) $(libadultchain_consensus_a_SOURCES)
 
@@ -545,7 +545,7 @@ endif
 
 libadultchainconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
 libadultchainconsensus_la_LIBADD = $(LIBSECP256K1) $(CRYPTO_LIBS)
-libadultchainconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL $(SSL_CFLAGS)
+libadultchainconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_ADULTCHAIN_INTERNAL $(SSL_CFLAGS)
 libadultchainconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif

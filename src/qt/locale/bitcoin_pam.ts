@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>I-sign ing &amp;mensayi</translation>
@@ -150,8 +150,8 @@
         <translation>&amp;Beripikan ing message...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -285,7 +285,7 @@
         <translation>Malaus ka</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>AdultChain</source>
         <translation>Bitcoin</translation>
     </message>
     <message>

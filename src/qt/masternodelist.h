@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_MASTERNODELIST_H
-#define BITCOIN_QT_MASTERNODELIST_H
+#ifndef ADULTCHAIN_QT_MASTERNODELIST_H
+#define ADULTCHAIN_QT_MASTERNODELIST_H
 
 #include <primitives/transaction.h>
 #include <qt/platformstyle.h>
@@ -79,4 +79,4 @@ private Q_SLOTS:
     void on_UpdateButton_clicked();
 };
 
-#endif // BITCOIN_QT_MASTERNODELIST_H
+#endif // ADULTCHAIN_QT_MASTERNODELIST_H

@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Undirrita &amp;skilaboð</translation>
@@ -362,8 +362,8 @@
         <translation>&amp;Yfirfara skilaboð...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -667,8 +667,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Error</source>

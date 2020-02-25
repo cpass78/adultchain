@@ -8,8 +8,8 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *bitcoin_strings[] = {
-QT_TRANSLATE_NOOP("adultchain-core", "Bitcoin Core"),
+static const char UNUSED *adultchain_strings[] = {
+QT_TRANSLATE_NOOP("adultchain-core", "AdultChain Core"),
 QT_TRANSLATE_NOOP("adultchain-core", "The %s developers"),
 QT_TRANSLATE_NOOP("adultchain-core", ""
 "-maxtxfee is set very high! Fees this large could be paid on a single "

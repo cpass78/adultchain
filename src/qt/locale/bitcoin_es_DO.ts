@@ -188,7 +188,7 @@
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
         <translation>%1 se cerrará ahora para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger de manera completa su Adultchain de robo por malware que esté infectando su sistema.</translation>
     </message>
     </context>
@@ -196,7 +196,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
@@ -275,7 +275,7 @@
     </message>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>Enviar monedas a una dirección Bitcoin</translation>
+        <translation>Enviar monedas a una dirección AdultChain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -298,8 +298,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,7 +351,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and adultchain: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Bitcoin)</translation>
+        <translation>Solicitar pagos (genera codigo QR y URL's de AdultChain)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -597,8 +597,8 @@
         <translation>Utilice un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1264,7 +1264,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Adultchain address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Bitcoin</translation>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección AdultChain</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1405,7 +1405,7 @@
     <name>adultchain-core</name>
     <message>
         <source>Adultchain Core</source>
-        <translation>Núcleo de Bitcoin</translation>
+        <translation>Núcleo de AdultChain</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

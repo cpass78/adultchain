@@ -128,7 +128,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     </context>
 <context>
     <name>CoinControlDialog</name>

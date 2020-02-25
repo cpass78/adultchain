@@ -128,7 +128,7 @@ Intro::Intro(QWidget *parent) :
         .arg(tr(PACKAGE_NAME))
         .arg(BLOCK_CHAIN_SIZE)
         .arg(2009)
-        .arg(tr("Bitcoin"))
+        .arg(tr("AdultChain"))
     );
     ui->lblExplanation2->setText(ui->lblExplanation2->text().arg(tr(PACKAGE_NAME)));
 
@@ -204,7 +204,7 @@ bool Intro::pickDataDirectory(interfaces::Node& node)
         /* If current default data directory does not exist, let the user choose one */
         Intro intro;
         intro.setDataDirectory(dataDir);
-        intro.setWindowIcon(QIcon(":icons/bitcoin"));
+        intro.setWindowIcon(QIcon(":icons/adultchain"));
 
         while(true)
         {
@@ -231,8 +231,8 @@ bool Intro::pickDataDirectory(interfaces::Node& node)
         settings.setValue("fReset", false);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the bitcoin.conf file in the default data directory
-     * (to be consistent with bitcoind behavior)
+     * override -datadir in the adultchain.conf file in the default data directory
+     * (to be consistent with adultchaind behavior)
      */
     if(dataDir != getDefaultDataDirectory()) {
         node.softSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

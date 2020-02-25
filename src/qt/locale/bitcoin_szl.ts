@@ -240,7 +240,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Szkryftnij &amp;wiadōmość</translation>
@@ -355,7 +355,7 @@
     </message>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>Poślij mōnety na adresã Bitcoin</translation>
+        <translation>Poślij mōnety na adresã AdultChain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -378,8 +378,8 @@
         <translation>&amp;Weryfikuj wiadōmość...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -411,7 +411,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Adultchain addresses</source>
-        <translation>Zweryfikuj wiadōmość, coby wejzdrzeć sie, iże ôstała podpisanŏ podanōm adresōm Bitcoin.</translation>
+        <translation>Zweryfikuj wiadōmość, coby wejzdrzeć sie, iże ôstała podpisanŏ podanōm adresōm AdultChain.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -451,7 +451,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Adultchain network</source>
-        <translation><numerusform>%n aktywne połōnczynie do necu Bitcoin</numerusform><numerusform>%n aktywnych połōnczyń do necu Bitcoin</numerusform><numerusform>%n aktywnych skuplowań do necu Bitcoin</numerusform></translation>
+        <translation><numerusform>%n aktywne połōnczynie do necu AdultChain</numerusform><numerusform>%n aktywnych połōnczyń do necu AdultChain</numerusform><numerusform>%n aktywnych skuplowań do necu AdultChain</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -757,7 +757,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Adultchain address.</source>
-        <translation>Wkludzōnŏ adresa "%1" niyma nŏleżnōm adresōm Bitcoin.</translation>
+        <translation>Wkludzōnŏ adresa "%1" niyma nŏleżnōm adresōm AdultChain.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -849,8 +849,8 @@
         <translation>Użyj ôbranego folderu datōw</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -862,7 +862,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Adultchain block chain.</source>
-        <translation>%1 sebiere i spamiyntŏ kopijõ kety blokōw Bitcoin.</translation>
+        <translation>%1 sebiere i spamiyntŏ kopijõ kety blokōw AdultChain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -896,8 +896,8 @@
         <translation>Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym bitcoin, zgodnie z miyniōnym ôpisym.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Prōba wydaniŏ bitcoinōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
+        <source>Attempting to spend xxxs that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Prōba wydaniŏ xxxōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1158,7 +1158,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Adultchain network after a connection is established, but this process has not completed yet.</source>
-        <translation>Wyświytlanŏ informacyjŏ może być niyterŏźnŏ. Twōj portmanyj synchrōnizuje sie autōmatycznie z necym bitcoin zarŏz po tym, jak zrychtowane je skuplowanie, ale proces tyn niy ôstoł jeszcze skōńczōny.</translation>
+        <translation>Wyświytlanŏ informacyjŏ może być niyterŏźnŏ. Twōj portmanyj synchrōnizuje sie autōmatycznie z necym adultchain zarŏz po tym, jak zrychtowane je skuplowanie, ale proces tyn niy ôstoł jeszcze skōńczōny.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1463,7 +1463,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Adultchain network.</source>
-        <translation>Ôpcyjōnalnŏ wiadōmość do prziwstōniŏ do żōndaniŏ płatu, kerŏ bydzie wyświytlanŏ, kej żōndanie ôstanie ôdewrzōne. Napōmniynie: wiadōmość ta niy ôstanie wysłanŏ z płatym w nec Bitcoin.</translation>
+        <translation>Ôpcyjōnalnŏ wiadōmość do prziwstōniŏ do żōndaniŏ płatu, kerŏ bydzie wyświytlanŏ, kej żōndanie ôstanie ôdewrzōne. Napōmniynie: wiadōmość ta niy ôstanie wysłanŏ z płatym w nec AdultChain.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -1668,7 +1668,7 @@
     </message>
     <message>
         <source>Warning: Invalid Adultchain address</source>
-        <translation>Pozōr: niynŏleżnŏ adresa Bitcoin</translation>
+        <translation>Pozōr: niynŏleżnŏ adresa AdultChain</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1691,7 +1691,7 @@
     </message>
     <message>
         <source>The Adultchain address to send the payment to</source>
-        <translation>Adresa Bitcoin, na kerõ chcesz posłać płat</translation>
+        <translation>Adresa AdultChain, na kerõ chcesz posłać płat</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1711,7 +1711,7 @@
     </message>
     <message>
         <source>A message that was attached to the adultchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Adultchain network.</source>
-        <translation>Wiadōmość, kerŏ ôstała prziwstōnŏ do URI adultchain:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu Bitcoin.</translation>
+        <translation>Wiadōmość, kerŏ ôstała prziwstōnŏ do URI adultchain:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu AdultChain.</translation>
     </message>
     </context>
 <context>

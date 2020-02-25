@@ -552,9 +552,9 @@ static bool ProcessBlockFound(const std::shared_ptr<const CBlock> &pblock, const
 
 void static BitcoinMiner(const CChainParams& chainparams, CConnman& connman, CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("bitcoinminer -- started\n");
+    LogPrintf("adultchainminer -- started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("bitcoin-miner");
+    RenameThread("adultchain-miner");
 
     unsigned int nExtraNonce = 0;
 
@@ -603,7 +603,7 @@ void static BitcoinMiner(const CChainParams& chainparams, CConnman& connman, CWa
             BlockAssembler assembler(chainparams);
             auto pblocktemplate = assembler.CreateNewBlock(pwallet, coinbaseScript->reserveScript, fProofOfStake, true);
             if (!pblocktemplate.get()) {
-                LogPrintf("bitcoinminer -- Failed to find a coinstake\n");
+                LogPrintf("adultchainminer -- Failed to find a coinstake\n");
                 MilliSleep(5000);
                 continue;
             }
@@ -655,7 +655,7 @@ void static BitcoinMiner(const CChainParams& chainparams, CConnman& connman, CWa
                     {
                         // Found a solution
                         SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                        LogPrintf("bitcoinminer:\n  proof-of-work found\n  hash: %s\n  target: %s\n", hash.GetHex(), hashTarget.GetHex());
+                        LogPrintf("adultchainminer:\n  proof-of-work found\n  hash: %s\n  target: %s\n", hash.GetHex(), hashTarget.GetHex());
                         ProcessBlockFound(pblock, chainparams);
                         SetThreadPriority(THREAD_PRIORITY_LOWEST);
                         coinbaseScript->KeepScript();
@@ -691,7 +691,7 @@ void static BitcoinMiner(const CChainParams& chainparams, CConnman& connman, CWa
         }
         catch (const std::runtime_error &e)
         {
-            LogPrintf("bitcoinminer -- runtime error: %s\n", e.what());
+            LogPrintf("adultchainminer -- runtime error: %s\n", e.what());
         }
     }
 }

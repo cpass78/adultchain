@@ -188,8 +188,8 @@
         <translation>Πορτοφόλι κρυπτογραφήθηκε</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 θα κλείσει τώρα για να τελειώσει η διαδικασία κρυπτογράφησης. Να θυμάστε ότι κρυπτογραφόντας το πορτοφόλι σας δεν μπορείτε να προστατεύσετε πλήρως τα bitcoin σας απο κλοπή μέσω malware που μπορεί να προσβάλει τον υπολογιστή σας.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
+        <translation>%1 θα κλείσει τώρα για να τελειώσει η διαδικασία κρυπτογράφησης. Να θυμάστε ότι κρυπτογραφόντας το πορτοφόλι σας δεν μπορείτε να προστατεύσετε πλήρως τα xxx σας απο κλοπή μέσω malware που μπορεί να προσβάλει τον υπολογιστή σας.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -354,8 +354,8 @@
         <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρό δίσκο...</translation>
     </message>
     <message>
-        <source>Send coins to a Adultchain address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση bitcoin</translation>
+        <source>Send coins to a AdultChain address</source>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση adultchain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>

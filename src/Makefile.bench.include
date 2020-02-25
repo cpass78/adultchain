@@ -2,17 +2,17 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += bench/bench_bitcoin
+bin_PROGRAMS += bench/bench_adultchain
 BENCH_SRCDIR = bench
-BENCH_BINARY = bench/bench_bitcoin$(EXEEXT)
+BENCH_BINARY = bench/bench_adultchain$(EXEEXT)
 
 RAW_BENCH_FILES = \
   bench/data/block413567.raw
 GENERATED_BENCH_FILES = $(RAW_BENCH_FILES:.raw=.raw.h)
 
-bench_bench_bitcoin_SOURCES = \
+bench_bench_adultchain_SOURCES = \
   $(RAW_BENCH_FILES) \
-  bench/bench_bitcoin.cpp \
+  bench/bench_adultchain.cpp \
   bench/bench.cpp \
   bench/bench.h \
   bench/checkblock.cpp \
@@ -27,17 +27,17 @@ bench_bench_bitcoin_SOURCES = \
   bench/lockedpool.cpp \
   bench/prevector.cpp
 
-nodist_bench_bench_bitcoin_SOURCES = $(GENERATED_BENCH_FILES)
+nodist_bench_bench_adultchain_SOURCES = $(GENERATED_BENCH_FILES)
 
-bench_bench_bitcoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CLFAGS) $(EVENT_PTHREADS_CFLAGS) -I$(builddir)/bench/
-bench_bench_bitcoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bench_bench_bitcoin_LDADD = \
-  $(LIBBITCOIN_SERVER) \
-  $(LIBBITCOIN_WALLET) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_CRYPTO) \
+bench_bench_adultchain_CPPFLAGS = $(AM_CPPFLAGS) $(ADULTCHAIN_INCLUDES) $(EVENT_CLFAGS) $(EVENT_PTHREADS_CFLAGS) -I$(builddir)/bench/
+bench_bench_adultchain_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bench_bench_adultchain_LDADD = \
+  $(LIBADULTCHAIN_SERVER) \
+  $(LIBADULTCHAIN_WALLET) \
+  $(LIBADULTCHAIN_COMMON) \
+  $(LIBADULTCHAIN_UTIL) \
+  $(LIBADULTCHAIN_CONSENSUS) \
+  $(LIBADULTCHAIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBLEVELDB_SSE42) \
   $(LIBMEMENV) \
@@ -45,25 +45,25 @@ bench_bench_bitcoin_LDADD = \
   $(LIBUNIVALUE)
 
 if ENABLE_ZMQ
-bench_bench_bitcoin_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+bench_bench_adultchain_LDADD += $(LIBADULTCHAIN_ZMQ) $(ZMQ_LIBS)
 endif
 
-bench_bench_bitcoin_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-bench_bench_bitcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bench_bench_adultchain_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+bench_bench_adultchain_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-CLEAN_BITCOIN_BENCH = bench/*.gcda bench/*.gcno $(GENERATED_BENCH_FILES)
+CLEAN_ADULTCHAIN_BENCH = bench/*.gcda bench/*.gcno $(GENERATED_BENCH_FILES)
 
-CLEANFILES += $(CLEAN_BITCOIN_BENCH)
+CLEANFILES += $(CLEAN_ADULTCHAIN_BENCH)
 
 bench/checkblock.cpp: bench/data/block413567.raw.h
 
-bitcoin_bench: $(BENCH_BINARY)
+adultchain_bench: $(BENCH_BINARY)
 
 bench: $(BENCH_BINARY) FORCE
 	$(BENCH_BINARY)
 
-bitcoin_bench_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_BENCH) $(bench_bench_bitcoin_OBJECTS) $(BENCH_BINARY)
+adultchain_bench_clean : FORCE
+	rm -f $(CLEAN_ADULTCHAIN_BENCH) $(bench_bench_adultchain_OBJECTS) $(BENCH_BINARY)
 
 %.raw.h: %.raw
 	@$(MKDIR_P) $(@D)

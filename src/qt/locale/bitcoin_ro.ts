@@ -188,7 +188,7 @@
         <translation>Portofel criptat</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
         <translation>%1 se va închide acum pentru a termina procesul de criptare. Ţineţi minte că criptarea portofelului nu vă poate proteja în totalitate de furtul monedelor de către programe malware care vă infectează calculatorul.</translation>
     </message>
     <message>
@@ -240,7 +240,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Semnează &amp;mesaj...</translation>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>Trimite monede către o adresă Bitcoin</translation>
+        <translation>Trimite monede către o adresă AdultChain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -382,8 +382,8 @@
         <translation>&amp;Verifică mesaj...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -455,7 +455,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Adultchain network</source>
-        <translation><numerusform>%n conexiune activă către reţeaua Bitcoin</numerusform><numerusform>%n conexiuni active către reţeaua Bitcoin</numerusform><numerusform>%n de conexiuni active către reţeaua Bitcoin</numerusform></translation>
+        <translation><numerusform>%n conexiune activă către reţeaua AdultChain</numerusform><numerusform>%n conexiuni active către reţeaua AdultChain</numerusform><numerusform>%n de conexiuni active către reţeaua AdultChain</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -499,7 +499,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Adultchain command-line options</source>
-        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă Bitcoin</translation>
+        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă AdultChain</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -857,8 +857,8 @@
         <translation>Foloseşte un dosar de date personalizat:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -870,7 +870,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Adultchain block chain.</source>
-        <translation>%1 va descarca si stoca o copie a blockchainului Bitcoin</translation>
+        <translation>%1 va descarca si stoca o copie a blockchainului AdultChain</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -900,12 +900,12 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Bitcoin, asa cum este detaliat mai jos.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the adultchain network, as detailed below.</source>
+        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua AdultChain, asa cum este detaliat mai jos.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Incercarea de a cheltui bitcoini care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
+        <source>Attempting to spend xxxs that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Incercarea de a cheltui xxxi care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1091,7 +1091,7 @@
     </message>
     <message>
         <source>Automatically open the Adultchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat în router portul aferent clientului Bitcoin. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
+        <translation>Deschide automat în router portul aferent clientului AdultChain. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1179,7 +1179,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de bitcoin.</translation>
+        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de xxx.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1239,7 +1239,7 @@
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa bitcoin pe care aţi specificat-o nu este validă.</translation>
+        <translation>Adresa adultchain pe care aţi specificat-o nu este validă.</translation>
     </message>
 </context>
 <context>
@@ -1895,7 +1895,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Adultchain network.</source>
-        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Bitcoin.</translation>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua AdultChain.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2147,7 +2147,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
         <translation>Ascunde</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for xxx transactions than the network can process.</source>
         <translation>Plata unei taxe minime de tranzactie este in regula atata timp cat exista mai mult spatiu in blocuri dacat sunt tranzactii. Insa trebuie sa fiti constienti ca acest lucru poate conduce la tranzactii care nu vor fi niciodata confirmate in cazul in care exista cerere de tranzactii mai mare decat poate procesa reteaua.</translation>
     </message>
     <message>
@@ -2328,7 +2328,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     </message>
     <message>
         <source>Warning: Invalid Adultchain address</source>
-        <translation>Atenţie: Adresa bitcoin nevalidă!</translation>
+        <translation>Atenţie: Adresa adultchain nevalidă!</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2371,7 +2371,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     </message>
     <message>
         <source>The Adultchain address to send the payment to</source>
-        <translation>Adresa bitcoin către care se face plata</translation>
+        <translation>Adresa adultchain către care se face plata</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2390,8 +2390,8 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
         <translation>Înlătură această intrare</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Taxa va fi scazuta in suma trimisa. Destinatarul va primi mai putini bitcoin decat ati specificat in campul sumei trimise. Daca au fost selectati mai multi destinatari, taxa se va imparti in mod egal.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xxxs than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Taxa va fi scazuta in suma trimisa. Destinatarul va primi mai putini xxx decat ati specificat in campul sumei trimise. Daca au fost selectati mai multi destinatari, taxa se va imparti in mod egal.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2419,7 +2419,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     </message>
     <message>
         <source>A message that was attached to the adultchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Adultchain network.</source>
-        <translation>un mesaj a fost ataşat la adultchain: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua bitcoin.</translation>
+        <translation>un mesaj a fost ataşat la adultchain: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua adultchain.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2463,8 +2463,8 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
         <translation>&amp;Semnează mesaj</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Puteţi semna mesaje/contracte cu adresele dvs. pentru a demostra ca puteti primi bitcoini trimisi la ele. Aveţi grijă să nu semnaţi nimic vag sau aleator, deoarece atacurile de tip phishing vă pot păcăli să le transferaţi identitatea. Semnaţi numai declaraţiile detaliate cu care sînteti de acord.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xxxs sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Puteţi semna mesaje/contracte cu adresele dvs. pentru a demostra ca puteti primi xxxi trimisi la ele. Aveţi grijă să nu semnaţi nimic vag sau aleator, deoarece atacurile de tip phishing vă pot păcăli să le transferaţi identitatea. Semnaţi numai declaraţiile detaliate cu care sînteti de acord.</translation>
     </message>
     <message>
         <source>The Adultchain address to sign the message with</source>
@@ -2500,7 +2500,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     </message>
     <message>
         <source>Sign the message to prove you own this Adultchain address</source>
-        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Bitcoin</translation>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă AdultChain</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2524,7 +2524,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     </message>
     <message>
         <source>The Adultchain address the message was signed with</source>
-        <translation>Introduceţi o adresă Bitcoin</translation>
+        <translation>Introduceţi o adresă AdultChain</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Adultchain address</source>

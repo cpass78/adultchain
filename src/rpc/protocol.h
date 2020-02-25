@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_RPC_PROTOCOL_H
-#define BITCOIN_RPC_PROTOCOL_H
+#ifndef ADULTCHAIN_RPC_PROTOCOL_H
+#define ADULTCHAIN_RPC_PROTOCOL_H
 
 #include <fs.h>
 
@@ -39,7 +39,7 @@ enum RPCErrorCode
     // It should not be used for application-layer errors.
     RPC_METHOD_NOT_FOUND = -32601,
     RPC_INVALID_PARAMS   = -32602,
-    // RPC_INTERNAL_ERROR should only be used for genuine errors in bitcoind
+    // RPC_INTERNAL_ERROR should only be used for genuine errors in adultchaind
     // (for example datadir corruption).
     RPC_INTERNAL_ERROR   = -32603,
     RPC_PARSE_ERROR      = -32700,
@@ -106,4 +106,4 @@ void DeleteAuthCookie();
 /** Parse JSON-RPC batch reply into a vector */
 std::vector<UniValue> JSONRPCProcessBatchReply(const UniValue &in, size_t num);
 
-#endif // BITCOIN_RPC_PROTOCOL_H
+#endif // ADULTCHAIN_RPC_PROTOCOL_H

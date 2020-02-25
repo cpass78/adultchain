@@ -243,7 +243,7 @@ Alihkan fail data ke dalam tab semasa</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Tandatangan &amp; mesej...</translation>
@@ -359,7 +359,7 @@ Alihkan fail data ke dalam tab semasa</translation>
     </message>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>Menghantar koin kepada alamat Bitcoin</translation>
+        <translation>Menghantar koin kepada alamat AdultChain</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -382,8 +382,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>sahkan mesej</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -411,7 +411,7 @@ Alihkan fail data ke dalam tab semasa</translation>
     </message>
     <message>
         <source>Sign messages with your Adultchain addresses to prove you own them</source>
-        <translation>sahkan mesej bersama alamat bitcoin anda untuk menunjukkan alamat ini anda punya</translation>
+        <translation>sahkan mesej bersama alamat AdultChain anda untuk menunjukkan alamat ini anda punya</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Adultchain addresses</source>
@@ -488,8 +488,8 @@ Alihkan fail data ke dalam tab semasa</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Error</source>

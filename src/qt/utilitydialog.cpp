@@ -10,7 +10,7 @@
 
 #include <qt/forms/ui_helpmessagedialog.h>
 
-#include <qt/bitcoingui.h>
+#include <qt/adultchaingui.h>
 #include <qt/clientmodel.h>
 #include <qt/guiconstants.h>
 #include <qt/intro.h>
@@ -157,7 +157,7 @@ ShutdownWindow::ShutdownWindow(QWidget *parent, Qt::WindowFlags f):
     setLayout(layout);
 }
 
-QWidget *ShutdownWindow::showShutdownWindow(BitcoinGUI *window)
+QWidget *ShutdownWindow::showShutdownWindow(AdultChainGUI *window)
 {
     if (!window)
         return nullptr;

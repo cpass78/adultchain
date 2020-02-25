@@ -1337,7 +1337,7 @@
     </message>
     <message>
         <source>'adultchain://' is not a valid URI. Use 'adultchain:' instead.</source>
-        <translation>'//:bitcoin' אינה כתובת URI תקינה. השתמשו במקום ב ':bitcoin'.</translation>
+        <translation>'//:adultchain' אינה כתובת URI תקינה. השתמשו במקום ב ':adultchain'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

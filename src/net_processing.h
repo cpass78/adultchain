@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NET_PROCESSING_H
-#define BITCOIN_NET_PROCESSING_H
+#ifndef ADULTCHAIN_NET_PROCESSING_H
+#define ADULTCHAIN_NET_PROCESSING_H
 
 #include <net.h>
 #include <validationinterface.h>
@@ -113,7 +113,7 @@ class CConnman;
 class CNetMsgMaker;
 class CDataStream;
 
-namespace net_processing_bitcoin
+namespace net_processing_adultchain
 {
 	bool ProcessGetData(CNode* pfrom, const Consensus::Params& consensusParams, CConnman* connman,
 						const CInv &inv);
@@ -134,7 +134,7 @@ class CConnman;
 class CNetMsgMaker;
 class CDataStream;
 
-namespace net_processing_bitcoin
+namespace net_processing_adultchain
 {
 	bool ProcessGetData(CNode* pfrom, const Consensus::Params& consensusParams, CConnman* connman,
 						const CInv &inv);
@@ -149,4 +149,4 @@ namespace net_processing_bitcoin
 	void ThreadProcessExtensions(CConnman *pConnman);
 }
 
-#endif // BITCOIN_NET_PROCESSING_H
+#endif // ADULTCHAIN_NET_PROCESSING_H

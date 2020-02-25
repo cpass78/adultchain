@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TEST_TEST_BITCOIN_H
-#define BITCOIN_TEST_TEST_BITCOIN_H
+#ifndef ADULTCHAIN_TEST_TEST_ADULTCHAIN_H
+#define ADULTCHAIN_TEST_TEST_ADULTCHAIN_H
 
 #include <chainparamsbase.h>
 #include <fs.h>

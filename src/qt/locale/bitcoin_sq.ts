@@ -192,7 +192,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Duke u sinkronizuar me rrjetin...</translation>
@@ -230,8 +230,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -393,8 +393,8 @@
         <translation>Miresevini</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -793,7 +793,7 @@
     <name>adultchain-core</name>
     <message>
         <source>Adultchain Core</source>
-        <translation>Berthama Bitcoin</translation>
+        <translation>Berthama AdultChain</translation>
     </message>
     <message>
         <source>Information</source>

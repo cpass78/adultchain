@@ -176,7 +176,7 @@
         <translation>تأكيد تشفير المحفظة</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ADULTCHAINS&lt;/b&gt;!</source>
         <translation>تحذير: إذا قمت بتشفير محفظتك وفقدت كلمة المرور الخاص بك, ستفقد كل عملات BITCOINS الخاصة بك.</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>محفظة مشفرة</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
         <translation>سيتم إغلاق %1 الآن لإنهاء عملية التشفير. تذكر أن تشفير محفظتك لا يمكن أن يحمي البتكوين الخاص بك بالكامل من السرقة عبر البرامج الضارة التي بامكانها أن تصيب جهاز الكمبيوتر الخاص بك.</translation>
     </message>
     <message>

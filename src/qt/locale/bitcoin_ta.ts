@@ -224,7 +224,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>கையொப்பம் &amp; செய்தி ...</translation>
@@ -330,8 +330,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -384,7 +384,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and adultchain: URIs)</source>
-        <translation>கொடுப்பனவுகளை கோருதல் (QR குறியீடுகள் மற்றும் bitcoin உருவாக்குகிறது: URI கள்)</translation>
+        <translation>கொடுப்பனவுகளை கோருதல் (QR குறியீடுகள் மற்றும் adultchain உருவாக்குகிறது: URI கள்)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -736,8 +736,8 @@ HD முக்கிய தலைமுறை முடக்கப்பட்
         <translation>தனிப்பயன் தரவு கோப்பகத்தைப் பயன்படுத்தவும்:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -755,11 +755,11 @@ HD முக்கிய தலைமுறை முடக்கப்பட்
         <translation>படிவம்</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the adultchain network, as detailed below.</source>
         <translation>சமீபத்திய பரிவர்த்தனைகள் இன்னும் காணப்படாமல் இருக்கலாம், எனவே உங்கள் பணப்பையின் சமநிலை தவறாக இருக்கலாம். கீழே விவரிக்கப்பட்டுள்ளபடி, உங்கள் பணப்பை பிட்ஃபோனை நெட்வொர்க்குடன் ஒத்திசைக்க முடிந்ததும் இந்த தகவல் சரியாக இருக்கும்.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend xxxs that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>இதுவரை காட்டப்படாத பரிவர்த்தனைகளால் பாதிக்கப்படும் பிட்னிக்களை செலவிடுவதற்கு முயற்சி பிணையத்தால் ஏற்கப்படாது.</translation>
     </message>
     <message>

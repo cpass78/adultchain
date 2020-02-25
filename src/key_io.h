@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_KEY_IO_H
-#define BITCOIN_KEY_IO_H
+#ifndef ADULTCHAIN_KEY_IO_H
+#define ADULTCHAIN_KEY_IO_H
 
 #include <chainparams.h>
 #include <key.h>
@@ -26,7 +26,7 @@ CTxDestination DecodeDestination(const std::string& str);
 bool IsValidDestinationString(const std::string& str);
 bool IsValidDestinationString(const std::string& str, const CChainParams& params);
 
-class CBitcoinAddress {
+class CAdultChainAddress {
 
 public:
     bool Set(const CKeyID &id);
@@ -35,10 +35,10 @@ public:
     bool IsValid() const;
     bool IsValid(const CChainParams &params) const;
 
-    CBitcoinAddress();
-    CBitcoinAddress(const CTxDestination &dest);
-    CBitcoinAddress(const std::string& strAddress);
-    CBitcoinAddress(const char* pszAddress);
+    CAdultChainAddress();
+    CAdultChainAddress(const CTxDestination &dest);
+    CAdultChainAddress(const std::string& strAddress);
+    CAdultChainAddress(const char* pszAddress);
 
     CTxDestination Get() const;
     bool GetKeyID(CKeyID &keyID) const;
@@ -46,12 +46,12 @@ public:
     bool IsScript() const;
     std::string ToString() const;
 
-    bool operator==(const CBitcoinAddress &rhs) const;
-    bool operator!=(const CBitcoinAddress &rhs) const;
-    bool operator<(const CBitcoinAddress &rhs) const;
+    bool operator==(const CAdultChainAddress &rhs) const;
+    bool operator!=(const CAdultChainAddress &rhs) const;
+    bool operator<(const CAdultChainAddress &rhs) const;
 
 private:
     CTxDestination txDest;
 };
 
-#endif // BITCOIN_KEY_IO_H
+#endif // ADULTCHAIN_KEY_IO_H

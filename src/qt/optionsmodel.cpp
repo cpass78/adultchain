@@ -9,7 +9,7 @@
 
 #include <qt/optionsmodel.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/adultchainunits.h>
 #include <qt/guiutil.h>
 
 #include <interfaces/node.h>
@@ -73,7 +73,7 @@ void OptionsModel::Init(bool resetSettings)
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::XXX);
+        settings.setValue("nDisplayUnit", AdultChainUnits::XXX);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))

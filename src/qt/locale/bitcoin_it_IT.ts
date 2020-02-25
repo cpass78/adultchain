@@ -184,8 +184,8 @@
         <translation>Portafoglio criptato</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 ora si chiuderà per concludere il processo di criptaggio. Ricorda che criptare il tuo portafoglio non può definitivamente proteggere i tuoi bitcoin da furti tramite malware che infetta il tuo computer.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xxxs from being stolen by malware infecting your computer.</source>
+        <translation>%1 ora si chiuderà per concludere il processo di criptaggio. Ricorda che criptare il tuo portafoglio non può definitivamente proteggere i tuoi xxxs da furti tramite malware che infetta il tuo computer.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -236,7 +236,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>AdultChainGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firma &amp;messaggio...</translation>
@@ -351,7 +351,7 @@
     </message>
     <message>
         <source>Send coins to a Adultchain address</source>
-        <translation>Invia monete ad un indirizzo Bitcoin...</translation>
+        <translation>Invia monete ad un indirizzo AdultChain...</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -374,8 +374,8 @@
         <translation>Verifica messaggio...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -483,7 +483,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Adultchain command-line options</source>
-        <translation>Mostra il %1 messaggio d'aiuto per ottenere una lista con le possibili opzioni per la riga di comando di Bitcoin</translation>
+        <translation>Mostra il %1 messaggio d'aiuto per ottenere una lista con le possibili opzioni per la riga di comando di AdultChain</translation>
     </message>
     <message>
         <source>Date: %1
@@ -755,8 +755,8 @@
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>AdultChain</source>
+        <translation>AdultChain</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
