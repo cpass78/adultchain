@@ -5,7 +5,7 @@
 """Test the ZMQ notification interface."""
 import struct
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import AdultChainTestFramework
 from test_framework.messages import CTransaction
 from test_framework.util import (
     assert_equal,
@@ -34,7 +34,7 @@ class ZMQSubscriber:
         return body
 
 
-class ZMQTest (BitcoinTestFramework):
+class ZMQTest (AdultChainTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
 

@@ -116,7 +116,7 @@ public:
     }
 };
 
-/** Interface to Bitcoin wallet from Qt view code. */
+/** Interface to AdultChain wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

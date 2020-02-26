@@ -224,7 +224,7 @@ static UniValue getmininginfo(const JSONRPCRequest& request)
     return obj;
 }
 
-// NOTE: Unlike wallet RPC (which use Bitcoin values), mining RPCs follow GBT (BIP 22) in using satoshi amounts
+// NOTE: Unlike wallet RPC (which use AdultChain values), mining RPCs follow GBT (BIP 22) in using satoshi amounts
 static UniValue prioritisetransaction(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 3)
@@ -1006,7 +1006,7 @@ static UniValue setgenerate(const JSONRPCRequest& request)
             fGenerate = false;
     }
 
-    GenerateBitcoins(fGenerate, nGenProcLimit, Params(), *g_connman);
+    GenerateAdultChains(fGenerate, nGenProcLimit, Params(), *g_connman);
 
     return fGenerate ? std::string("Mining started") : std::string("Mining stopped");
 }

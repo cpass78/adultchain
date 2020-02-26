@@ -152,14 +152,14 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating Bitcoin Core startup and shutdown.
+/** Class encapsulating AdultChain Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
-class BitcoinCore: public QObject
+class AdultChainCore: public QObject
 {
     Q_OBJECT
 public:
-    explicit BitcoinCore(interfaces::Node& node);
+    explicit AdultChainCore(interfaces::Node& node);
 
 public Q_SLOTS:
     void initialize();
@@ -177,13 +177,13 @@ private:
     interfaces::Node& m_node;
 };
 
-/** Main Bitcoin application object */
-class BitcoinApplication: public QApplication
+/** Main AdultChain application object */
+class AdultChainApplication: public QApplication
 {
     Q_OBJECT
 public:
-    explicit BitcoinApplication(interfaces::Node& node, int &argc, char **argv);
-    ~BitcoinApplication();
+    explicit AdultChainApplication(interfaces::Node& node, int &argc, char **argv);
+    ~AdultChainApplication();
 
 #ifdef ENABLE_WALLET
     /// Create payment server
@@ -206,7 +206,7 @@ public:
     /// Get process return value
     int getReturnValue() const { return returnValue; }
 
-    /// Get window identifier of QMainWindow (BitcoinGUI)
+    /// Get window identifier of QMainWindow (AdultChainGUI)
     WId getMainWinId() const;
 
     /// Setup platform style
@@ -231,7 +231,7 @@ private:
     interfaces::Node& m_node;
     OptionsModel *optionsModel;
     ClientModel *clientModel;
-    BitcoinGUI *window;
+    AdultChainGUI *window;
     QTimer *pollShutdownTimer;
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer;
@@ -247,18 +247,18 @@ private:
 
 #include <qt/adultchain.moc>
 
-BitcoinCore::BitcoinCore(interfaces::Node& node) :
+AdultChainCore::AdultChainCore(interfaces::Node& node) :
     QObject(), m_node(node)
 {
 }
 
-void BitcoinCore::handleRunawayException(const std::exception *e)
+void AdultChainCore::handleRunawayException(const std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
     Q_EMIT runawayException(QString::fromStdString(m_node.getWarnings("gui")));
 }
 
-void BitcoinCore::initialize()
+void AdultChainCore::initialize()
 {
     try
     {
@@ -272,7 +272,7 @@ void BitcoinCore::initialize()
     }
 }
 
-void BitcoinCore::shutdown()
+void AdultChainCore::shutdown()
 {
     try
     {
@@ -287,7 +287,7 @@ void BitcoinCore::shutdown()
     }
 }
 
-BitcoinApplication::BitcoinApplication(interfaces::Node& node, int &argc, char **argv):
+AdultChainApplication::AdultChainApplication(interfaces::Node& node, int &argc, char **argv):
     QApplication(argc, argv),
     coreThread(0),
     m_node(node),
@@ -305,20 +305,20 @@ BitcoinApplication::BitcoinApplication(interfaces::Node& node, int &argc, char *
     setQuitOnLastWindowClosed(false);
 }
 
-void BitcoinApplication::setupPlatformStyle()
+void AdultChainApplication::setupPlatformStyle()
 {
     // UI per-platform customization
-    // This must be done inside the BitcoinApplication constructor, or after it, because
+    // This must be done inside the AdultChainApplication constructor, or after it, because
     // PlatformStyle::instantiate requires a QApplication
     std::string platformName;
-    platformName = gArgs.GetArg("-uiplatform", BitcoinGUI::DEFAULT_UIPLATFORM);
+    platformName = gArgs.GetArg("-uiplatform", AdultChainGUI::DEFAULT_UIPLATFORM);
     platformStyle = PlatformStyle::instantiate(QString::fromStdString(platformName));
     if (!platformStyle) // Fall back to "other" if specified name not found
         platformStyle = PlatformStyle::instantiate("other");
     assert(platformStyle);
 }
 
-BitcoinApplication::~BitcoinApplication()
+AdultChainApplication::~AdultChainApplication()
 {
     if(coreThread)
     {
@@ -341,26 +341,26 @@ BitcoinApplication::~BitcoinApplication()
 }
 
 #ifdef ENABLE_WALLET
-void BitcoinApplication::createPaymentServer()
+void AdultChainApplication::createPaymentServer()
 {
     paymentServer = new PaymentServer(this);
 }
 #endif
 
-void BitcoinApplication::createOptionsModel(bool resetSettings)
+void AdultChainApplication::createOptionsModel(bool resetSettings)
 {
     optionsModel = new OptionsModel(m_node, nullptr, resetSettings);
 }
 
-void BitcoinApplication::createWindow(const NetworkStyle *networkStyle)
+void AdultChainApplication::createWindow(const NetworkStyle *networkStyle)
 {
-    window = new BitcoinGUI(m_node, platformStyle, networkStyle, 0);
+    window = new AdultChainGUI(m_node, platformStyle, networkStyle, 0);
 
     pollShutdownTimer = new QTimer(window);
     connect(pollShutdownTimer, SIGNAL(timeout()), window, SLOT(detectShutdown()));
 }
 
-void BitcoinApplication::createSplashScreen(const NetworkStyle *networkStyle)
+void AdultChainApplication::createSplashScreen(const NetworkStyle *networkStyle)
 {
     SplashScreen *splash = new SplashScreen(m_node, 0, networkStyle);
     // We don't hold a direct pointer to the splash screen after creation, but the splash
@@ -370,12 +370,12 @@ void BitcoinApplication::createSplashScreen(const NetworkStyle *networkStyle)
     connect(this, SIGNAL(requestedShutdown()), splash, SLOT(close()));
 }
 
-void BitcoinApplication::startThread()
+void AdultChainApplication::startThread()
 {
     if(coreThread)
         return;
     coreThread = new QThread(this);
-    BitcoinCore *executor = new BitcoinCore(m_node);
+    AdultChainCore *executor = new AdultChainCore(m_node);
     executor->moveToThread(coreThread);
 
     /*  communication to and from thread */

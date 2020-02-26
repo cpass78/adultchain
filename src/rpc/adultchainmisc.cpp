@@ -82,7 +82,7 @@ static const CRPCCommand commands[] =
   { "adultchain",            "spork",          &spork,          {"mode"} },
 };
 
-void RegisterBitcoinMiscCommands(CRPCTable &tableRPC)
+void RegisterAdultChainMiscCommands(CRPCTable &tableRPC)
 {
     for (unsigned int vcidx = 0; vcidx < ARRAYLEN(commands); vcidx++)
         tableRPC.appendCommand(commands[vcidx].name, &commands[vcidx]);

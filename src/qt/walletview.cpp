@@ -93,7 +93,7 @@ WalletView::~WalletView()
 {
 }
 
-void WalletView::setBitcoinGUI(BitcoinGUI *gui)
+void WalletView::setAdultChainGUI(AdultChainGUI *gui)
 {
     if (gui)
     {

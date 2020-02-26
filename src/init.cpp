@@ -1241,7 +1241,7 @@ bool AppInitParameterInteraction()
 
 static bool LockDataDirectory(bool probeOnly)
 {
-    // Make sure only a single Bitcoin process is using the data directory.
+    // Make sure only a single AdultChain process is using the data directory.
     fs::path datadir = GetDataDir();
     if (!DirIsWritable(datadir)) {
         return InitError(strprintf(_("Cannot write to data directory '%s'; check permissions."), datadir.string()));
@@ -1848,7 +1848,7 @@ bool AppInitMain()
     // ********************************************************* Step 11b: Load cache data
     LoadExtensionsDataCaches();
 
-    // ********************************************************* Step 11c: update block tip in Bitcoin modules
+    // ********************************************************* Step 11c: update block tip in AdultChain modules
 
     // force UpdatedBlockTip to initialize nCachedBlockHeight for DS, MN payments and budgets
     // but don't call it directly to prevent triggering of other listeners like zmq etc.
