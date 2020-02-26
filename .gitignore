@@ -48,10 +48,10 @@ src/qt/forms/ui_*.h
 src/qt/test/moc*.cpp
 
 src/qt/adultchain-qt.config
-src/qt/bitcoin-qt.creator
-src/qt/bitcoin-qt.creator.user
-src/qt/bitcoin-qt.files
-src/qt/bitcoin-qt.includes
+src/qt/adultchain-qt.creator
+src/qt/adultchain-qt.creator.user
+src/qt/adultchain-qt.files
+src/qt/adultchain-qt.includes
 
 .deps
 .dirstamp
@@ -89,7 +89,7 @@ background.tiff*
 
 # Unit-tests
 Makefile.test
-bitcoin-qt_test
+adultchain-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -102,7 +102,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_bitcoin.coverage/
+test_adultchain.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -117,5 +117,5 @@ test/cache/*
 
 /doc/doxygen/
 
-libbitcoinconsensus.pc
+libadultchainconsensus.pc
 contrib/devtools/split-debug.sh
