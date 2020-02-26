@@ -4781,7 +4781,7 @@ bool CWallet::GetOutpointAndKeysFromOutput(const COutput& out, COutPoint& outpoi
 
     CTxDestination address1;
     ExtractDestination(pubScript, address1);
-    CBitcoinAddress address2(address1);
+    CAdultChainAddress address2(address1);
 
     CKeyID keyID;
     if (!address2.GetKeyID(keyID)) {

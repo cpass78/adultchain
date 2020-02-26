@@ -220,7 +220,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(CWallet *wallet, 
 
 		CTxDestination address1;
 		ExtractDestination(payee, address1);
-		CBitcoinAddress address2(address1);
+		CAdultChainAddress address2(address1);
 		LogPrintf("CreateNewBlock::FillBlockPayee -- Masternode payment %lld to %s\n",
 			  masternodePayment, EncodeDestination(address1));
          }
