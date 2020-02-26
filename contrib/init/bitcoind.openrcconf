@@ -1,33 +1,33 @@
-# /etc/conf.d/bitcoind: config file for /etc/init.d/bitcoind
+# /etc/conf.d/adultchaind: config file for /etc/init.d/adultchaind
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/bitcoin/bitcoin.conf"
+#ADULTCHAIND_CONFIGFILE="/etc/adultchain/adultchain.conf"
 
-# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/bitcoind"
+# What directory to write pidfile to?  (created and owned by $ADULTCHAIND_USER)
+#ADULTCHAIND_PIDDIR="/var/run/adultchaind"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bitcoind.pid"
+#ADULTCHAIND_PIDFILE="${ADULTCHAIND_PIDDIR}/adultchaind.pid"
 
-# Where to write bitcoind data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/bitcoind"
+# Where to write adultchaind data (be mindful that the blockchain is large)
+#ADULTCHAIND_DATADIR="/var/lib/adultchaind"
 
-# User and group to own bitcoind process
-#BITCOIND_USER="bitcoin"
-#BITCOIND_GROUP="bitcoin"
+# User and group to own adultchaind process
+#ADULTCHAIND_USER="adultchain"
+#ADULTCHAIND_GROUP="adultchain"
 
-# Path to bitcoind executable
-#BITCOIND_BIN="/usr/bin/bitcoind"
+# Path to adultchaind executable
+#ADULTCHAIND_BIN="/usr/bin/adultchaind"
 
-# Nice value to run bitcoind under
-#BITCOIND_NICE=0
+# Nice value to run adultchaind under
+#ADULTCHAIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
-#BITCOIND_OPTS=""
+#ADULTCHAIND_OPTS=""
 
-# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# The timeout in seconds OpenRC will wait for adultchaind to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule
 # here. For more information see man 8 start-stop-daemon.
-BITCOIND_SIGTERM_TIMEOUT=60
+ADULTCHAIND_SIGTERM_TIMEOUT=60

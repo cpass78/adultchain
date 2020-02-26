@@ -28,7 +28,7 @@ EXCLUDE = [
     'src/univalue/test/object.cpp',
     'src/univalue/lib/univalue_escapes.h',
     # auto generated:
-    'src/qt/bitcoinstrings.cpp',
+    'src/qt/adultchainstrings.cpp',
     'src/chainparamsseeds.h',
     # other external copyrights:
     'src/tinyformat.h',
@@ -279,7 +279,7 @@ Usage:
     $ ./copyright_header.py report <base_directory> [verbose]
 
 Arguments:
-    <base_directory> - The base directory of a bitcoin source code repository.
+    <base_directory> - The base directory of a adultchain source code repository.
     [verbose] - Includes a list of every file of each subcategory in the report.
 """
 
@@ -435,7 +435,7 @@ Usage:
     $ ./copyright_header.py update <base_directory>
 
 Arguments:
-    <base_directory> - The base directory of a bitcoin source code repository.
+    <base_directory> - The base directory of a adultchain source code repository.
 """
 
 def print_file_action_message(filename, action):
@@ -557,7 +557,7 @@ Usage:
     $ ./copyright_header.py insert <file>
 
 Arguments:
-    <file> - A source file in the bitcoin repository.
+    <file> - A source file in the adultchain repository.
 """
 
 def insert_cmd(argv):

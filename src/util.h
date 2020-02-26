@@ -7,8 +7,8 @@
  * Server/client environment: argument handling, config file parsing,
  * thread wrappers, startup time
  */
-#ifndef BITCOIN_UTIL_H
-#define BITCOIN_UTIL_H
+#ifndef ADULTCHAIN_UTIL_H
+#define ADULTCHAIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/adultchain-config.h>
@@ -50,8 +50,8 @@ public:
 
 extern CTranslationInterface translationInterface;
 
-extern const char * const BITCOIN_CONF_FILENAME;
-extern const char * const BITCOIN_PID_FILENAME;
+extern const char * const ADULTCHAIN_CONF_FILENAME;
+extern const char * const ADULTCHAIN_PID_FILENAME;
 
 const char * const MASTERNODE_CONF_FILENAME_ARG = "-mnconf";
 const char * const MASTERNODE_CONF_FILENAME = "masternode.conf";
@@ -332,7 +332,7 @@ void RenameThread(const char* name);
  */
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
-    std::string s = strprintf("bitcoin-%s", name);
+    std::string s = strprintf("adultchain-%s", name);
     RenameThread(s.c_str());
     try
     {
@@ -382,4 +382,4 @@ inline void insert(std::set<TsetT>& dst, const Tsrc& src) {
 
 } // namespace util
 
-#endif // BITCOIN_UTIL_H
+#endif // ADULTCHAIN_UTIL_H

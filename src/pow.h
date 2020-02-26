@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_POW_H
-#define BITCOIN_POW_H
+#ifndef ADULTCHAIN_POW_H
+#define ADULTCHAIN_POW_H
 
 #include <consensus/params.h>
 
@@ -17,4 +17,4 @@ class uint256;
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const Consensus::Params& params);
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params);
 
-#endif // BITCOIN_POW_H
+#endif // ADULTCHAIN_POW_H

@@ -1,13 +1,16 @@
+# Project settings
+.idea
+
 *.tar.gz
 
 *.exe
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
-src/bitcoin-tx
-src/test/test_bitcoin
-src/test/test_bitcoin_fuzzy
-src/qt/test/test_bitcoin-qt
+src/adultchain
+src/adultchaind
+src/adultchain-cli
+src/adultchain-tx
+src/test/test_adultchain
+src/test/test_adultchain_fuzzy
+src/qt/test/test_adultchain-qt
 
 # autoreconf
 Makefile.in
@@ -30,8 +33,8 @@ config.log
 config.status
 configure
 libtool
-src/config/bitcoin-config.h
-src/config/bitcoin-config.h.in
+src/config/adultchain-config.h
+src/config/adultchain-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -44,7 +47,7 @@ src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
 
-src/qt/bitcoin-qt.config
+src/qt/adultchain-qt.config
 src/qt/bitcoin-qt.creator
 src/qt/bitcoin-qt.creator.user
 src/qt/bitcoin-qt.files
@@ -80,8 +83,8 @@ src/qt/bitcoin-qt.includes
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-bitcoin-qt
-Bitcoin-Qt.app
+adultchain-qt
+AdultChain-Qt.app
 background.tiff*
 
 # Unit-tests

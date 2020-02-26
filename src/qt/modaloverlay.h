@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_MODALOVERLAY_H
-#define BITCOIN_QT_MODALOVERLAY_H
+#ifndef ADULTCHAIN_QT_MODALOVERLAY_H
+#define ADULTCHAIN_QT_MODALOVERLAY_H
 
 #include <QDateTime>
 #include <QWidget>
@@ -50,4 +50,4 @@ private:
     bool foreverHidden;
 };
 
-#endif // BITCOIN_QT_MODALOVERLAY_H
+#endif // ADULTCHAIN_QT_MODALOVERLAY_H

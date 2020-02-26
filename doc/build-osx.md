@@ -38,10 +38,10 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
-Build Bitcoin Core
+Build AdultChain Core
 ------------------------
 
-1. Clone the Bitcoin Core source code and cd into `bitcoin`
+1. Clone the Bitcoin Core source code and cd into `adultchain`
 
         git clone https://github.com/bitcoin/bitcoin
         cd bitcoin

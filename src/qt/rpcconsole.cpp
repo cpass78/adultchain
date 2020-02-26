@@ -1066,7 +1066,7 @@ void RPCConsole::buildParameterlist(QString arg)
     // Append repair parameter to command line.
     args.append(arg);
 
-    // Send command-line arguments to BitcoinGUI::handleRestart()
+    // Send command-line arguments to AdultChainGUI::handleRestart()
     Q_EMIT handleRestart(args);
 }
 

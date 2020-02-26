@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The AdultChain Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_KEYSTORE_H
-#define BITCOIN_KEYSTORE_H
+#ifndef ADULTCHAIN_KEYSTORE_H
+#define ADULTCHAIN_KEYSTORE_H
 
 #include <key.h>
 #include <pubkey.h>
@@ -80,4 +80,4 @@ typedef std::map<CKeyID, std::pair<CPubKey, std::vector<unsigned char> > > Crypt
 /** Return the CKeyID of the key involved in a script (if there is a unique one). */
 CKeyID GetKeyForDestination(const CKeyStore& store, const CTxDestination& dest);
 
-#endif // BITCOIN_KEYSTORE_H
+#endif // ADULTCHAIN_KEYSTORE_H

@@ -225,79 +225,79 @@ bool IsValidDestinationString(const std::string& str)
     return IsValidDestinationString(str, Params());
 }
 
-CBitcoinAddress::CBitcoinAddress()
+CAdultChainAddress::CAdultChainAddress()
 {
     Set(CNoDestination());
 }
 
-CBitcoinAddress::CBitcoinAddress(const CTxDestination &dest)
+CAdultChainAddress::CAdultChainAddress(const CTxDestination &dest)
 {
     txDest = dest;
 }
 
-CBitcoinAddress::CBitcoinAddress(const std::string &strAddress)
+CAdultChainAddress::CAdultChainAddress(const std::string &strAddress)
 {
     Set(DecodeDestination(strAddress));
 }
 
-CBitcoinAddress::CBitcoinAddress(const char *pszAddress)
+CAdultChainAddress::CAdultChainAddress(const char *pszAddress)
 {
     Set(DecodeDestination(std::string(pszAddress)));
 }
 
-bool CBitcoinAddress::Set(const CKeyID &id)
+bool CAdultChainAddress::Set(const CKeyID &id)
 {
     return Set(CTxDestination(id));
 }
 
-bool CBitcoinAddress::Set(const CScriptID &id)
+bool CAdultChainAddress::Set(const CScriptID &id)
 {
     return Set(CTxDestination(id));
 }
 
-bool CBitcoinAddress::Set(const CTxDestination &dest)
+bool CAdultChainAddress::Set(const CTxDestination &dest)
 {
     txDest = dest;
     return IsValid();
 }
 
 
-bool CBitcoinAddress::IsValid() const
+bool CAdultChainAddress::IsValid() const
 {
     return !boost::get<CNoDestination>(&txDest);
 }
 
-bool CBitcoinAddress::IsValid(const CChainParams &params) const
+bool CAdultChainAddress::IsValid(const CChainParams &params) const
 {
     return IsValidDestinationString(EncodeDestination(txDest), params);
 }
 
-std::string CBitcoinAddress::ToString() const
+std::string CAdultChainAddress::ToString() const
 {
     return EncodeDestination(txDest);
 }
 
-bool CBitcoinAddress::operator==(const CBitcoinAddress &rhs) const
+bool CAdultChainAddress::operator==(const CAdultChainAddress &rhs) const
 {
     return txDest == rhs.txDest;
 }
 
-bool CBitcoinAddress::operator!=(const CBitcoinAddress &rhs) const
+bool CAdultChainAddress::operator!=(const CAdultChainAddress &rhs) const
 {
     return !(txDest == rhs.txDest);
 }
 
-bool CBitcoinAddress::operator<(const CBitcoinAddress &rhs) const
+bool CAdultChainAddress::operator<(const CAdultChainAddress &rhs) const
 {
     return txDest < rhs.txDest;
 }
 
-CTxDestination CBitcoinAddress::Get() const
+CTxDestination CAdultChainAddress::Get() const
 {
     return txDest;
 }
 
-bool CBitcoinAddress::GetKeyID(CKeyID &keyID) const
+bool CAdultChainAddress::GetKeyID(CKeyID &keyID) const
 {
     if(const CKeyID *pKeyID = boost::get<CKeyID>(&txDest))
     {
@@ -308,7 +308,7 @@ bool CBitcoinAddress::GetKeyID(CKeyID &keyID) const
     return false;
 }
 
-bool CBitcoinAddress::IsScript() const
+bool CAdultChainAddress::IsScript() const
 {
     return boost::get<CScriptID>(&txDest);
 }

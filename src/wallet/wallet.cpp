@@ -2968,7 +2968,7 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend, CTransac
 
             // Create change script that will be used if we need change
             // TODO: pass in scriptChange instead of reservekey so
-            // change transaction isn't always pay-to-bitcoin-address
+            // change transaction isn't always pay-to-adultchain-address
             CScript scriptChange;
 
             // coin control: send change to custom address
@@ -4781,7 +4781,7 @@ bool CWallet::GetOutpointAndKeysFromOutput(const COutput& out, COutPoint& outpoi
 
     CTxDestination address1;
     ExtractDestination(pubScript, address1);
-    CBitcoinAddress address2(address1);
+    CAdultChainAddress address2(address1);
 
     CKeyID keyID;
     if (!address2.GetKeyID(keyID)) {

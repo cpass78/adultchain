@@ -1,4 +1,4 @@
-# Support for Output Descriptors in Bitcoin Core
+# Support for Output Descriptors in AdultChain Core
 
 Since Bitcoin Core v0.17, there is support for Output Descriptors in the
 `scantxoutset` RPC call. This is a simple language which can be used to

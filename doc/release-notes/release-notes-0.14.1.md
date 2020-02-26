@@ -1,4 +1,4 @@
-Bitcoin Core version 0.14.1 is now available from:
+AdultChain Core version 0.14.1 is now available from:
 
   <https://bitcoin.org/bin/bitcoin-core-0.14.1/>
 
