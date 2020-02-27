@@ -54,7 +54,7 @@ script:
     - BEGIN_FOLD autogen; test -n "$CONFIG_SHELL" && DOCKER_EXEC "$CONFIG_SHELL" -c "./autogen.sh" || DOCKER_EXEC ./autogen.sh; END_FOLD
     - mkdir build && cd build
     - BEGIN_FOLD configure; DOCKER_EXEC ../configure --cache-file=config.cache $ADULTCHAIN_CONFIG_ALL $ADULTCHAIN_CONFIG || ( cat config.log && false); END_FOLD
-    - BEGIN_FOLD distdir; DOCKER_EXEC make distdir VERSION=$HOST; END_FOLD
+    - BEGIN_FOLD distdir; DOCKER_EXEC make VERSION=$HOST; END_FOLD
     - cd adultchain-$HOST
     - BEGIN_FOLD configure; DOCKER_EXEC ./configure --cache-file=../config.cache $ADULTCHAIN_CONFIG_ALL $ADULTCHAIN_CONFIG || ( cat config.log && false); END_FOLD
     - BEGIN_FOLD build; DOCKER_EXEC make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && DOCKER_EXEC make $GOAL V=1 ; false ); END_FOLD
